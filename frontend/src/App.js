@@ -8,6 +8,7 @@ import {
   Button,
   Switch,
   Typography,
+  Slider,
 } from "@mui/material";
 import { useState } from "react";
 import axios from "axios";
@@ -19,6 +20,7 @@ function App() {
   const [data, setData] = useState({});
   const [path, setPath] = useState([]);
   const [shortest, setShortest] = useState(true);
+  const [delay, setDelay] = useState(500);
 
   useState(() => {
     axios
@@ -107,6 +109,19 @@ function App() {
               ></Switch>
               <Typography>Shortest</Typography>
             </Box>
+            <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
+              <Slider
+                defaultValue={500}
+                value={delay}
+                onChange={(e) => setDelay(e.target.value)}
+                step={50}
+                marks
+                min={250}
+                max={1000}
+              />
+              <Typography>Delay</Typography>
+            </Box>
+
             <Button variant="contained" color="primary" type="submit">
               Submit
             </Button>
@@ -131,7 +146,7 @@ function App() {
       </aside>
       <main>
         {console.log(path)}
-        <Map path={path} />
+        <Map path={path} delay={delay} />
       </main>
     </div>
   );
