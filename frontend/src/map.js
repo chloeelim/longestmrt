@@ -1,4 +1,6 @@
-function Map() {
+import Circle from "./circle";
+
+function Map({ path }) {
   return (
     <svg
       width="1464"
@@ -15,15 +17,15 @@ function Map() {
               id="Vector"
               d="M300.5 228.5L302 404C302 417.333 304.073 431.073 313.5 440.5C322.927 449.927 341 448 341 448C361 452 523.167 448 536.5 448C536.5 448 577.719 442.714 595 456.5C639.5 492 704.573 565.073 714 574.5L942.5 798.5C951.167 807.927 951.167 833.427 942.5 844C926.4 866.6 904.5 903.5 858 917C791.077 936.429 769.34 895.167 755.5 882.5L631 761.5"
               stroke="#005EC4"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
             <path
               id="Vector_2"
               d="M631 762.5C621.573 753.073 610 733.5 617 727.5L627.5 717C638.5 710.08 667.573 713 677 713H772C785.333 713 800.073 707.927 809.5 698.5L922.5 582.8C931.927 573.373 1083 423 1092 415.5C1101 408 1114 375.5 1140 372C1166 368.5 1373.36 359.5 1376.5 381.5C1383.95 433.663 1382 487 1382 487"
               stroke="#005EC4"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
           </g>
           <g id="skllrt">
@@ -31,29 +33,29 @@ function Map() {
               id="Vector_3"
               d="M1074 127L1063.28 116.14C1058.57 111.427 1055 106.167 1055 99.5L1053 79.07C1053 77.5 1051.49 69.0733 1046.78 64.36L1027.78 45.36C1023.07 40.6467 1003.21 20.7867 998.5 25.5L972.5 51.5C967.786 56.2133 987.787 74.3567 992.5 79.07L1013.86 95.71C1018.57 100.423 1021.11 105.5 1027.78 105.5H1044.5C1051.17 105.5 1058.43 111.567 1063.14 116.28"
               stroke="#999999"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
             <path
               id="Vector_4"
               d="M992.214 209.218L981.493 198.358C976.78 193.645 973.214 188.385 973.214 181.718L971.214 161.288C971.214 159.718 969.707 151.291 964.993 146.578L945.993 127.578C941.28 122.865 921.427 103.005 916.714 107.718L890.714 133.718C886 138.431 906.001 156.575 910.714 161.288L932.074 177.928C936.787 182.641 939.327 187.718 945.993 187.718H962.714C969.381 187.718 976.64 193.785 981.353 198.498"
               stroke="#999999"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
             <path
               id="Vector_5"
               d="M995 213.114L1005.95 223.744C1010.76 228.356 1014.44 233.539 1014.58 240.204L1017.01 260.587C1017.05 262.156 1018.73 270.549 1023.55 275.161L1042.95 293.752C1047.76 298.364 1068.03 317.797 1072.64 312.985L1098.08 286.438C1102.7 281.625 1082.31 263.911 1077.5 259.299L1055.79 243.118C1050.98 238.506 1048.33 233.484 1041.67 233.626L1024.95 233.982C1018.29 234.124 1010.9 228.213 1006.09 223.601"
               stroke="#999999"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
             <path
               id="Vector_6"
               d="M1075.02 129.175L1085.97 139.804C1090.78 144.416 1094.46 149.599 1094.6 156.264L1097.03 176.647C1097.07 178.217 1098.75 186.609 1103.57 191.221L1122.97 209.813C1127.78 214.425 1148.05 233.858 1152.66 229.045L1178.1 202.498C1182.71 197.686 1162.33 179.972 1157.52 175.36L1135.81 159.178C1131 154.566 1128.35 149.545 1121.69 149.686L1104.97 150.042C1098.3 150.184 1090.92 144.273 1086.1 139.661"
               stroke="#999999"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
           </g>
           <g id="lrtbpl">
@@ -61,15 +63,15 @@ function Map() {
               id="Vector 2"
               d="M1264.5 430.5C1284.83 425.833 1323.3 424.5 1314.5 456.5C1311.17 468.667 1315 492 1357 488H1440"
               stroke="#6BB78E"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
             <path
               id="Vector 1"
               d="M183.5 379C193.5 380.5 213.1 376.8 211.5 350V257C210.667 247.167 214.8 228.1 238 230.5H300.5V213M300.5 213C299.333 208.5 295.4 199.2 289 198C284 195 276 192 276 170.5C273.333 152.5 274.7 119.7 293.5 120.5H312C315.833 120.833 323.5 125.5 323.5 141.5V167C323.5 175.333 321.2 192.6 312 195C308.167 196.167 300.5 201.4 300.5 213Z"
               stroke="#999999"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
           </g>
           <g id="tel">
@@ -77,8 +79,8 @@ function Map() {
               id="Vector_7"
               d="M300 29L516 255.5C525.427 264.927 539.5 265.667 539.5 279C539.5 434.429 550.5 541 539.5 677C538.425 690.29 535.073 724.573 544.5 734L596 806.5L731 921C740.427 930.427 743.5 936.5 778.5 936.5C929 931.5 969 967 1012 898"
               stroke="#784008"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
           </g>
           <g id="nsl">
@@ -86,8 +88,8 @@ function Map() {
               id="Vector_8"
               d="M186 643V209C183.167 173.167 197.2 98.1 276 84.5H543.5C579 84.5 656.4 92.1 674 172.5C691.6 252.9 674 385.5 674 406C674 426.5 677.1 433.6 647.5 458L558 552.5C550.5 563.5 549.9 585.1 579.5 613.5L694.5 704.5L769.5 794.5C785 809 776 813 776 864V951C778.667 961.167 788.6 981.6 807 982H840.5"
               stroke="#D42E12"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
           </g>
           <g id="ccl">
@@ -95,22 +97,22 @@ function Map() {
               id="Vector_9"
               d="M703 703C720.523 703 735.111 685.483 747.5 696L910.833 857.112C923.222 867.629 935.611 867.629 948 857.112"
               stroke="#FA9E0D"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
             <path
               id="Vector_10"
               d="M505.105 905.831C444.918 860.744 401.911 796.207 383.274 723.007C364.636 649.807 371.497 572.379 402.709 503.664C433.921 434.948 487.594 379.109 554.756 345.479C621.918 311.848 698.501 302.464 771.705 318.895C844.909 335.325 910.299 376.575 956.946 435.75C1003.59 494.925 1028.67 568.439 1027.99 644.007C1027.3 719.574 1000.9 792.616 953.192 850.925C905.483 909.233 839.358 949.276 765.869 964.36"
               stroke="#FA9E0D"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
             <path
               id="cclex"
               d="M505.105 905.831C542.047 933.505 584.364 953.021 629.295 963.106C674.226 973.191 720.763 973.618 765.869 964.36"
               stroke="#FA9E0D"
-              stroke-width="9"
-              stroke-linecap="round"
+              strokeWidth="9"
+              strokeLinecap="round"
               stroke-dasharray="10 10"
             />
           </g>
@@ -119,8 +121,8 @@ function Map() {
               id="ewl_2"
               d="M13.5 315V607.5C13.5 616.5 18.5 635.8 38.5 641H372.5C381.5 641.5 396 647.5 407 662C473.975 717.65 536.212 740.318 591 808C611.21 832.966 612 856.5 625.5 872C639 887.5 638 900 708.5 900C752 900 790.5 903.5 788 847.5C788 809.5 797.5 792 829 767L1139 456C1152 444 1160.5 433.111 1228.5 433.5C1257.67 433.667 1309 425 1309 401L1317.5 359L1309 309.5"
               stroke="#009645"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
           </g>
           <g id="nel">
@@ -128,1582 +130,1754 @@ function Map() {
               id="Vector_11"
               d="M556.954 940C556.954 940 550.454 851.5 559.954 841.5C569.454 831.5 684.454 732.5 728.954 667.5C734.088 660 728.954 539 728.954 539C728.954 525.667 724 479.5 732.5 471C847.001 356.499 1078 124.5 1078 124.5"
               stroke="#9900AA"
-              stroke-width="8"
-              stroke-linecap="round"
+              strokeWidth="8"
+              strokeLinecap="round"
             />
           </g>
         </g>
 
         <g id="circles">
           <g id="circle line circles">
-            <circle
+            <Circle
+              path={path}
               id="cc29"
               cx="563"
               cy="941"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc22"
               cx="374"
               cy="638"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc19"
               cx="430"
               cy="450"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc17"
               cx="539"
               cy="355"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc15"
               cx="677"
               cy="311"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc13"
               cx="857"
               cy="351"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc10"
               cx="999"
               cy="501"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc09"
               cx="1019"
               cy="575"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc04"
               cx="956"
               cy="838"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ce02"
               cx="791"
               cy="954"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ce01"
               cx="900"
               cy="902"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc01"
               cx="696"
               cy="703"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc28"
               cx="499.5"
               cy="899.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc27"
               cx="458.5"
               cy="864.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc26"
               cx="426.5"
               cy="820.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc25"
               cx="405.5"
               cy="783.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc23"
               cx="373.5"
               cy="687.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc21"
               cx="378.5"
               cy="566.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc20"
               cx="400.5"
               cy="510.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc16"
               cx="594.5"
               cy="325.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc14"
               cx="774.5"
               cy="319.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc12"
               cx="918.5"
               cy="395.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc11"
               cx="966.5"
               cy="441.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc16_2"
               cx="1027.5"
               cy="633.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc08"
               cx="1027.5"
               cy="633.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc07"
               cx="1027.5"
               cy="685.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc05"
               cx="998.5"
               cy="788.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc02"
               cx="790.5"
               cy="736.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc03"
               cx="870.5"
               cy="815.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc06"
               cx="1016.5"
               cy="736.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cc24"
               cx="386.5"
               cy="737.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </g>
 
           <g id="green line circles">
-            <circle
+            <Circle
+              path={path}
               id="ew33"
               cx="13.5"
               cy="311.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew31"
               cx="13.5"
               cy="408.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew26"
               cx="67.5"
               cy="640.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew17"
               cx="546.5"
               cy="770.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew18"
               cx="508.5"
               cy="736.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew16"
               cx="599"
               cy="813"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew15"
               cx="638.5"
               cy="885.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew11"
               cx="909.5"
               cy="685.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew10"
               cx="947.5"
               cy="651.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew09"
               cx="982.5"
               cy="618.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew03"
               cx="1308.5"
               cy="396.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew01"
               cx="1308.5"
               cy="310.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cg2"
               cx="1439.5"
               cy="488.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="cg1"
               cx="1381.5"
               cy="488.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew02"
               cx="1321.5"
               cy="369.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew05"
               cx="1197.5"
               cy="428.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew06"
               cx="1124.5"
               cy="474.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew07"
               cx="1072.5"
               cy="519.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew19"
               cx="465.5"
               cy="700.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew20"
               cx="420.5"
               cy="673.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew22"
               cx="314.5"
               cy="643.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew23"
               cx="267.5"
               cy="643.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew25"
               cx="125.5"
               cy="640.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew27"
               cx="17.5"
               cy="586.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew28"
               cx="13.5"
               cy="542.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew29"
               cx="13.5"
               cy="498.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew30"
               cx="13.5"
               cy="452.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew32"
               cx="13.5"
               cy="357.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew24"
               cx="186"
               cy="644"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew14"
               cx="782"
               cy="862"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew13"
               cx="782"
               cy="813"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew12"
               cx="871"
               cy="729"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ew04"
               cx="1293"
               cy="426"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </g>
 
           <g id="red line circles">
-            <circle
+            <Circle
+              path={path}
               id="ns2"
               cx="185.5"
               cy="539.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns3"
               cx="185.5"
               cy="466.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns10"
               cx="421.5"
               cy="84.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns9"
               cx="349"
               cy="82"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns21"
               cx="625"
               cy="487"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns4"
               cx="188"
               cy="379"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns22"
               cx="549"
               cy="575"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns11"
               cx="491.5"
               cy="84.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns12"
               cx="561.5"
               cy="84.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns13"
               cx="631.5"
               cy="107.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns14"
               cx="669.5"
               cy="151.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns15"
               cx="676.5"
               cy="204.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns16"
               cx="679.5"
               cy="256.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns23"
               cx="601.5"
               cy="630.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns28"
               cx="846.5"
               cy="984.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns20"
               cx="649.5"
               cy="457.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns19"
               cx="676.5"
               cy="404.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns18"
               cx="676.5"
               cy="352.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns8"
               cx="232.5"
               cy="106.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns7"
               cx="185.5"
               cy="203.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ns5"
               cx="185.5"
               cy="292.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </g>
 
           <g id="brown line circles">
-            <circle
+            <Circle
+              path={path}
               id="te1"
               cx="300.5"
               cy="29.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te3"
               cx="383.5"
               cy="115.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te4"
               cx="416.5"
               cy="148.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te5"
               cx="443.5"
               cy="181.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te6"
               cx="478.5"
               cy="215.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te7"
               cx="512.5"
               cy="246.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te8"
               cx="536.5"
               cy="305.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te12"
               cx="541.5"
               cy="493.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te15"
               cx="541.5"
               cy="624.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te16"
               cx="536.5"
               cy="673.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te11"
               cx="544"
               cy="450"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te22"
               cx="1016.5"
               cy="892.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te18"
               cx="652.5"
               cy="851.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te19"
               cx="731.5"
               cy="924.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="te13"
               cx="541.5"
               cy="532.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </g>
 
           <g id="blue line circles">
-            <circle
+            <Circle
+              path={path}
               id="dt1"
               cx="301"
               cy="237"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt12"
               cx="733"
               cy="591"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt19"
               cx="637"
               cy="768"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt2"
               cx="300.5"
               cy="282.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt3"
               cx="300.5"
               cy="318.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt7"
               cx="303.5"
               cy="427.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt13"
               cx="781.5"
               cy="637.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt22"
               cx="847.5"
               cy="661.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt21"
               cx="806.5"
               cy="698.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt20"
               cx="631.5"
               cy="715.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt17"
               cx="832.5"
               cy="919.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt18"
               cx="736.5"
               cy="861.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt23"
               cx="896.5"
               cy="604.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt24"
               cx="930.5"
               cy="574.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt25"
               cx="968.5"
               cy="537.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt27"
               cx="1048.5"
               cy="461.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt28"
               cx="1089.5"
               cy="419.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt29"
               cx="1124.5"
               cy="381.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt30"
               cx="1183.5"
               cy="369.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt31"
               cx="1251.5"
               cy="369.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt33"
               cx="1383.5"
               cy="401.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt34"
               cx="1383.5"
               cy="437.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt8"
               cx="353.5"
               cy="447.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt6"
               cx="300.5"
               cy="386.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="dt5"
               cx="300.5"
               cy="352.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </g>
 
           <g id="circle line circles_2">
-            <circle
+            <Circle
+              path={path}
               id="ne05"
               cx="669.5"
               cy="736.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ne10"
               cx="760.5"
               cy="441.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ne11"
               cx="802.5"
               cy="395.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ne13"
               cx="891.5"
               cy="308.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ne14"
               cx="927.5"
               cy="273.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ne15"
               cx="962.5"
               cy="244.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ne09"
               cx="730.5"
               cy="489.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ne08"
               cx="730.5"
               cy="537.5"
               r="11"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ne16"
               cx="995"
               cy="209"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="ne17"
               cx="1075"
               cy="127"
               r="13.5"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </g>
 
           <g id="bp lrt line circles">
-            <circle
+            <Circle
+              path={path}
               id="bp2"
               cx="213.5"
               cy="341.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="bp3"
               cx="213.5"
               cy="301.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
-              id="np4"
+            <Circle
+              path={path}
+              id="bp4"
               cx="213.5"
               cy="264.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="bp13"
               cx="280.5"
               cy="190.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="bp12"
               cx="277.5"
               cy="163.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="bp11"
               cx="277.5"
               cy="131.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="bp10"
               cx="303.5"
               cy="120.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="bp09"
               cx="323.5"
               cy="140.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="bp08"
               cx="323.5"
               cy="167.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="bp07"
               cx="316.5"
               cy="194.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
-              id="np5"
+            <Circle
+              path={path}
+              id="bp5"
               cx="251.5"
               cy="228.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </g>
 
           <g id="other lrt line circles">
-            <circle
+            <Circle
+              path={path}
               id="sw1"
               cx="971.5"
               cy="156.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="sw2"
               cx="955.5"
               cy="135.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="sw3"
               cx="937.5"
               cy="118.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="sw5"
               cx="889.5"
               cy="129.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="sw7"
               cx="921.5"
               cy="169.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="se1"
               cx="1062.5"
               cy="246.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pe1"
               cx="1097.5"
               cy="175.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pe2"
               cx="1115.5"
               cy="199.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pe3"
               cx="1135.5"
               cy="219.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pe4"
               cx="1167.5"
               cy="216.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pe5"
               cx="1167.5"
               cy="190.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pe6"
               cx="1152.5"
               cy="169.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pe7"
               cx="1129.5"
               cy="152.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pw1"
               cx="1051.5"
               cy="74.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pw3"
               cx="1020.5"
               cy="33.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pw4"
               cx="985.5"
               cy="33.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pw5"
               cx="974.5"
               cy="63.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pw6"
               cx="994.5"
               cy="83.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="pw7"
               cx="1015.5"
               cy="101.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="se2"
               cx="1085.5"
               cy="269.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="se3"
               cx="1085.5"
               cy="301.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="se4"
               cx="1046.5"
               cy="298.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="se5"
               cx="1023.5"
               cy="274.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="sw8"
               cx="943.5"
               cy="184.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="sw6"
               cx="898.5"
               cy="154.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
-            <circle
+            <Circle
+              path={path}
               id="sw4"
               cx="909.5"
               cy="112.5"
               r="9"
               fill="white"
               stroke="black"
-              stroke-width="5"
+              strokeWidth="5"
             />
           </g>
         </g>

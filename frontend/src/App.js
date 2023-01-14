@@ -88,7 +88,8 @@ function App() {
         </form>
       </aside>
       <main>
-        <Map />
+        {console.log(path)}
+        <Map path={path} />
       </main>
     </div>
   );
