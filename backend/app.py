@@ -1,9 +1,17 @@
-from flask import Flask
+from flask import Flask, request, abort
+from flask_cors import CORS
+from collections import deque
+import json
 
 app = Flask(__name__)
+CORS(app)
 
 with open("../misc/data.csv") as f:
     data = [line.split(',') for line in f]
+    codes = [i[0] for i in data]
+
+with open("../misc/adj.json") as f:
+    adj = json.load(f)
 
 
 @app.route("/mrts")
@@ -14,5 +22,48 @@ def mrts():
             mrt[code.lower()] = name
     return mrt
 
+@app.route("/shortest")
+def shortest():
+    if "s" not in request.args or "e" not in request.args:
+        abort(400)
+    
+    try:
+        start = [code for code in codes if request.args['s'].upper() in code.split()]
+        end = [code for code in codes if request.args['e'].upper() in code.split()]
+        if not start:
+            return {"error": f"start {request.args['s']} is invalid"}, 400
+        if not end:
+            return {"error": f"end {request.args['e']} is invalid"}, 400
+        start = start[0]
+        end = end[0]
 
-app.run(debug=True)
+    except:
+        pass
+
+    # bfs
+    queue = deque()
+    queue.append((start, None))
+    parent = {}
+    while queue:
+        curr, par = queue.popleft()
+        if curr in parent:
+            continue
+        else:
+            parent[curr] = par
+        
+        if curr == end:
+            break
+
+        for edge in adj[curr]["edges"]:
+            queue.append((edge, curr))
+    res = []
+    curr = end
+    while curr:
+        res.append(curr)
+        curr = parent[curr]
+    return { "path": res[::-1] }
+            
+
+
+
+app.run(port=5001, debug=True)
