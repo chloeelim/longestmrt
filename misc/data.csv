@@ -24,10 +24,8 @@ NS23,Somerset,Red,North South
 NS24 NE6 CC1,Dhoby Ghaut,Red,North South
 NS25 EW13,City Hall,Red,North South
 NS26 EW14,Raffles Place,Red,North South
-NS27 CE2,Marina Bay,Red,North South
 NS28,Marina South Pier,Red,North South
 EW1,Pasir Ris,Green,East West
-EW2 DT32,Tampines,Green,East West
 EW3,Simei,Green,East West
 EW4 CG,Tanah Merah,Green,East West
 EW5,Bedok,Green,East West
@@ -37,9 +35,6 @@ EW8 CC9,Paya Lebar,Green,East West
 EW9,Aljunied,Green,East West
 EW10,Kallang,Green,East West
 EW11,Lavender,Green,East West
-EW12 DT14,Bugis,Green,East West
-EW13 NS25,City Hall,Green,East West
-EW14 NS26,Raffles Place,Green,East West
 EW15,Tanjong Pagar,Green,East West
 EW16 NE3 TE17,Outram Park,Green,East West
 EW17,Tiong Bahru,Green,East West
@@ -49,7 +44,6 @@ EW20,Commonwealth,Green,East West
 EW21 CC22,Buona Vista,Green,East West
 EW22,Dover,Green,East West
 EW23,Clementi,Green,East West
-EW24 NS1,Jurong East,Green,East West
 EW25,Chinese Garden,Green,East West
 EW26,Lakeside,Green,East West
 EW27,Boon Lay,Green,East West
@@ -62,22 +56,16 @@ EW33,Tuas Link,Green,East West
 CG1 DT35,Expo,Green,Changi Airport Branch
 CG2,Changi Airport,Green,Changi Airport Branch
 NE1 CC29,HarbourFront,Purple,North East
-NE3 EW16,Outram Park,Purple,North East
-NE4 DT19,Chinatown,Purple,North East
 NE5,Clarke Quay,Purple,North East
-NE6 NS24 CC1,Dhoby Ghaut,Purple,North East
-NE7 DT12,Little India,Purple,North East
 NE8,Farrer Park,Purple,North East
 NE9,Boon Keng,Purple,North East
 NE10,Potong Pasir,Purple,North East
 NE11,Woodleigh,Purple,North East
-NE12 CC13,Serangoon,Purple,North East
 NE13,Kovan,Purple,North East
 NE14,Hougang,Purple,North East
 NE15,Buangkok,Purple,North East
 NE16 STC,Sengkang,Purple,North East
 NE17 PTC,Punggol,Purple,North East
-CC1 NS24 NE6,Dhoby Ghaut,Orange,Circle
 CC2,Bras Basah,Orange,Circle
 CC3,Esplanade,Orange,Circle
 CC4 DT15,Promenade,Orange,Circle
@@ -85,26 +73,21 @@ CC5,Nicoll Highway,Orange,Circle
 CC6,Stadium,Orange,Circle
 CC7,Mountbatten,Orange,Circle
 CC8,Dakota,Orange,Circle
-CC9 EW8,Paya Lebar,Orange,Circle
 CC10 DT26,MacPherson,Orange,Circle
 CC11,Tai Seng,Orange,Circle
 CC12,Bartley,Orange,Circle
 CC13 NE12,Serangoon,Orange,Circle
 CC14,Lorong Chuan,Orange,Circle
-CC15 NS17,Bishan,Orange,Circle
 CC16,Marymount,Orange,Circle
 CC17 TE9,Caldecott,Orange,Circle
-CC19 DT9,Botanic Gardens,Orange,Circle
 CC20,Farrer Road,Orange,Circle
 CC21,Holland Village,Orange,Circle
-CC22 EW21,Buona Vista,Orange,Circle
 CC23,one-north,Orange,Circle
 CC24,Kent Ridge,Orange,Circle
 CC25,Haw Par Villa,Orange,Circle
 CC26,Pasir Panjang,Orange,Circle
 CC27,Labrador Park,Orange,Circle
 CC28,Telok Blangah,Orange,Circle
-CC29 NE1,HarbourFront,Orange,Circle
 CE1 DT16,Bayfront,Orange,Circle Extension
 CE2 NS27 TE20,Marina Bay,Orange,Circle Extension
 DT1 BP6,Bukit Panjang,Blue,Downtown
@@ -116,12 +99,9 @@ DT7,Sixth Avenue,Blue,Downtown
 DT8,Tan Kah Kee,Blue,Downtown
 DT9 CC19,Botanic Gardens,Blue,Downtown
 DT10 TE11,Stevens,Blue,Downtown
-DT11 NS21,Newton,Blue,Downtown
 DT12 NE7,Little India,Blue,Downtown
 DT13,Rochor,Blue,Downtown
 DT14 EW12,Bugis,Blue,Downtown
-DT15 CC4,Promenade,Blue,Downtown
-DT16 CE1,Bayfront,Blue,Downtown
 DT17,Downtown,Blue,Downtown
 DT18,Telok Ayer,Blue,Downtown
 DT19 NE4,Chinatown,Blue,Downtown
@@ -131,7 +111,6 @@ DT22,Jalan Besar,Blue,Downtown
 DT23,Bendemeer,Blue,Downtown
 DT24,Geylang Bahru,Blue,Downtown
 DT25,Mattar,Blue,Downtown
-DT26 CC10,MacPherson,Blue,Downtown
 DT27,Ubi,Blue,Downtown
 DT28,Kaki Bukit,Blue,Downtown
 DT29,Bedok North,Blue,Downtown
@@ -140,9 +119,7 @@ DT31,Tampines West,Blue,Downtown
 DT32 EW2,Tampines,Blue,Downtown
 DT33,Tampines East,Blue,Downtown
 DT34,Upper Changi,Blue,Downtown
-DT35 CG1,Expo,Blue,Downtown
 TE1,Woodlands North,Brown,Thomson–East Coast
-TE2 NS9,Woodlands,Brown,Thomson–East Coast
 TE3,Woodlands South,Brown,Thomson–East Coast
 BP2,South View,,
 BP3,Keat Hong,,
