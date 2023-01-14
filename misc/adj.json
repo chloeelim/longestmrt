@@ -1,0 +1,1084 @@
+{
+    "NS1 EW24": {
+        "name": "Jurong East",
+        "edges": [
+            "NS2",
+            "EW23",
+            "EW25"
+        ]
+    },
+    "NS2": {
+        "name": "Bukit Batok",
+        "edges": [
+            "NS1 EW24",
+            "NS3"
+        ]
+    },
+    "NS3": {
+        "name": "Bukit Gombak",
+        "edges": [
+            "NS2",
+            "NS4 BP1"
+        ]
+    },
+    "NS4 BP1": {
+        "name": "Choa Chu Kang",
+        "edges": [
+            "NS3",
+            "NS5",
+            "DT1 BP6"
+        ]
+    },
+    "NS5": {
+        "name": "Yew Tee",
+        "edges": [
+            "NS4 BP1",
+            "NS7"
+        ]
+    },
+    "NS7": {
+        "name": "Kranji",
+        "edges": [
+            "NS5",
+            "NS8"
+        ]
+    },
+    "NS8": {
+        "name": "Marsiling",
+        "edges": [
+            "NS7",
+            "NS9 TE2"
+        ]
+    },
+    "NS9 TE2": {
+        "name": "Woodlands",
+        "edges": [
+            "NS8",
+            "NS10",
+            "TE1",
+            "TE3"
+        ]
+    },
+    "NS10": {
+        "name": "Admiralty",
+        "edges": [
+            "NS9 TE2",
+            "NS11"
+        ]
+    },
+    "NS11": {
+        "name": "Sembawang",
+        "edges": [
+            "NS10",
+            "NS12"
+        ]
+    },
+    "NS12": {
+        "name": "Canberra",
+        "edges": [
+            "NS11",
+            "NS13"
+        ]
+    },
+    "NS13": {
+        "name": "Yishun",
+        "edges": [
+            "NS12",
+            "NS14"
+        ]
+    },
+    "NS14": {
+        "name": "Khatib",
+        "edges": [
+            "NS13",
+            "NS15"
+        ]
+    },
+    "NS15": {
+        "name": "Yio Chu Kang",
+        "edges": [
+            "NS14",
+            "NS16"
+        ]
+    },
+    "NS16": {
+        "name": "Ang Mo Kio",
+        "edges": [
+            "NS15",
+            "NS17 CC15"
+        ]
+    },
+    "NS17 CC15": {
+        "name": "Bishan",
+        "edges": [
+            "NS16",
+            "NS18",
+            "CC14",
+            "CC16"
+        ]
+    },
+    "NS18": {
+        "name": "Braddell",
+        "edges": [
+            "NS17 CC15",
+            "NS19"
+        ]
+    },
+    "NS19": {
+        "name": "Toa Payoh",
+        "edges": [
+            "NS18",
+            "NS20"
+        ]
+    },
+    "NS20": {
+        "name": "Novena",
+        "edges": [
+            "NS19",
+            "NS21 DT11"
+        ]
+    },
+    "NS21 DT11": {
+        "name": "Newton",
+        "edges": [
+            "NS20",
+            "NS22",
+            "DT10",
+            "NE7 DT12"
+        ]
+    },
+    "NS22": {
+        "name": "Orchard",
+        "edges": [
+            "NS21 DT11",
+            "NS23"
+        ]
+    },
+    "NS23": {
+        "name": "Somerset",
+        "edges": [
+            "NS22",
+            "NS24 NE6 CC1"
+        ]
+    },
+    "NS24 NE6 CC1": {
+        "name": "Dhoby Ghaut",
+        "edges": [
+            "NS23",
+            "NS25 EW13",
+            "NE5",
+            "NE7 DT12",
+            "EW21 CC22"
+        ]
+    },
+    "NS25 EW13": {
+        "name": "City Hall",
+        "edges": [
+            "NS24 NE6 CC1",
+            "NS26 EW14",
+            "EW12 DT14",
+            "NS26 EW14"
+        ]
+    },
+    "NS26 EW14": {
+        "name": "Raffles Place",
+        "edges": [
+            "NS25 EW13",
+            "NS27 CE2",
+            "NS25 EW13",
+            "EW15"
+        ]
+    },
+    "NS27 CE2": {
+        "name": "Marina Bay",
+        "edges": [
+            "NS26 EW14",
+            "NS28",
+            "CE1 DT16"
+        ]
+    },
+    "NS28": {
+        "name": "Marina South Pier",
+        "edges": [
+            "NS27 CE2"
+        ]
+    },
+    "EW1": {
+        "name": "Pasir Ris",
+        "edges": [
+            "NS1 EW24"
+        ]
+    },
+    "EW2 DT32": {
+        "name": "Tampines",
+        "edges": [
+            "NS25 EW13",
+            "EW3",
+            "DT31",
+            "DT33"
+        ]
+    },
+    "EW3": {
+        "name": "Simei",
+        "edges": [
+            "NS1 EW24",
+            "EW4 CG"
+        ]
+    },
+    "EW4 CG": {
+        "name": "Tanah Merah",
+        "edges": [
+            "EW3",
+            "EW5"
+        ]
+    },
+    "EW5": {
+        "name": "Bedok",
+        "edges": [
+            "EW4 CG",
+            "EW6"
+        ]
+    },
+    "EW6": {
+        "name": "Kembangan",
+        "edges": [
+            "EW5",
+            "EW7"
+        ]
+    },
+    "EW7": {
+        "name": "Eunos",
+        "edges": [
+            "EW6",
+            "EW8 CC9"
+        ]
+    },
+    "EW8 CC9": {
+        "name": "Paya Lebar",
+        "edges": [
+            "EW7",
+            "EW9",
+            "CC8",
+            "CC10 DT26"
+        ]
+    },
+    "EW9": {
+        "name": "Aljunied",
+        "edges": [
+            "EW8 CC9",
+            "EW10"
+        ]
+    },
+    "EW10": {
+        "name": "Kallang",
+        "edges": [
+            "EW9",
+            "EW11"
+        ]
+    },
+    "EW11": {
+        "name": "Lavender",
+        "edges": [
+            "EW10",
+            "EW12 DT14"
+        ]
+    },
+    "EW12 DT14": {
+        "name": "Bugis",
+        "edges": [
+            "EW11",
+            "NS25 EW13",
+            "DT13",
+            "CC4 DT15"
+        ]
+    },
+    "EW13 NS25": {
+        "name": "City Hall",
+        "edges": [
+            "EW12 DT14",
+            "NS26 EW14",
+            "NS24 NE6 CC1",
+            "NS26 EW14"
+        ]
+    },
+    "EW14 NS26": {
+        "name": "Raffles Place",
+        "edges": [
+            "NS25 EW13",
+            "EW15",
+            "NS25 EW13",
+            "NS27 CE2"
+        ]
+    },
+    "EW15": {
+        "name": "Tanjong Pagar",
+        "edges": [
+            "NS26 EW14",
+            "EW16 NE3"
+        ]
+    },
+    "EW16 NE3": {
+        "name": "Outram Park",
+        "edges": [
+            "EW15",
+            "EW17",
+            "NE1 CC29",
+            "NE4 DT19"
+        ]
+    },
+    "EW17": {
+        "name": "Tiong Bahru",
+        "edges": [
+            "EW16 NE3",
+            "EW18"
+        ]
+    },
+    "EW18": {
+        "name": "Redhill",
+        "edges": [
+            "EW17",
+            "EW19"
+        ]
+    },
+    "EW19": {
+        "name": "Queenstown",
+        "edges": [
+            "EW18",
+            "EW20"
+        ]
+    },
+    "EW20": {
+        "name": "Commonwealth",
+        "edges": [
+            "EW19",
+            "EW21 CC22"
+        ]
+    },
+    "EW21 CC22": {
+        "name": "Buona Vista",
+        "edges": [
+            "EW20",
+            "EW22",
+            "CC21",
+            "CC23"
+        ]
+    },
+    "EW22": {
+        "name": "Dover",
+        "edges": [
+            "EW21 CC22",
+            "EW23"
+        ]
+    },
+    "EW23": {
+        "name": "Clementi",
+        "edges": [
+            "EW22",
+            "NS1 EW24"
+        ]
+    },
+    "EW24 NS1": {
+        "name": "Jurong East",
+        "edges": [
+            "EW23",
+            "EW25",
+            "NS2"
+        ]
+    },
+    "EW25": {
+        "name": "Chinese Garden",
+        "edges": [
+            "NS1 EW24",
+            "EW26"
+        ]
+    },
+    "EW26": {
+        "name": "Lakeside",
+        "edges": [
+            "EW25",
+            "EW27"
+        ]
+    },
+    "EW27": {
+        "name": "Boon Lay",
+        "edges": [
+            "EW26",
+            "EW28"
+        ]
+    },
+    "EW28": {
+        "name": "Pioneer",
+        "edges": [
+            "EW27",
+            "EW29"
+        ]
+    },
+    "EW29": {
+        "name": "Joo Koon",
+        "edges": [
+            "EW28",
+            "EW30"
+        ]
+    },
+    "EW30": {
+        "name": "Gul Circle",
+        "edges": [
+            "EW29",
+            "EW31"
+        ]
+    },
+    "EW31": {
+        "name": "Tuas Crescent",
+        "edges": [
+            "EW30",
+            "EW32"
+        ]
+    },
+    "EW32": {
+        "name": "Tuas West Road",
+        "edges": [
+            "EW31",
+            "EW33"
+        ]
+    },
+    "EW33": {
+        "name": "Tuas Link",
+        "edges": [
+            "EW32"
+        ]
+    },
+    "CG1 DT35": {
+        "name": "Expo",
+        "edges": []
+    },
+    "CG2": {
+        "name": "Changi Airport",
+        "edges": []
+    },
+    "NE1 CC29": {
+        "name": "HarbourFront",
+        "edges": [
+            "EW16 NE3",
+            "CC28"
+        ]
+    },
+    "NE3 EW16": {
+        "name": "Outram Park",
+        "edges": [
+            "NE1 CC29",
+            "NE4 DT19",
+            "EW15",
+            "EW17"
+        ]
+    },
+    "NE4 DT19": {
+        "name": "Chinatown",
+        "edges": [
+            "EW16 NE3",
+            "NE5",
+            "DT18",
+            "DT20"
+        ]
+    },
+    "NE5": {
+        "name": "Clarke Quay",
+        "edges": [
+            "NE4 DT19",
+            "NS24 NE6 CC1"
+        ]
+    },
+    "NE6 NS24 CC1": {
+        "name": "Dhoby Ghaut",
+        "edges": [
+            "NE5",
+            "NE7 DT12",
+            "NS23",
+            "NS25 EW13",
+            "EW21 CC22"
+        ]
+    },
+    "NE7 DT12": {
+        "name": "Little India",
+        "edges": [
+            "NS24 NE6 CC1",
+            "NE8",
+            "NS21 DT11",
+            "DT13"
+        ]
+    },
+    "NE8": {
+        "name": "Farrer Park",
+        "edges": [
+            "NE7 DT12",
+            "NE9"
+        ]
+    },
+    "NE9": {
+        "name": "Boon Keng",
+        "edges": [
+            "NE8",
+            "NE10"
+        ]
+    },
+    "NE10": {
+        "name": "Potong Pasir",
+        "edges": [
+            "NE9",
+            "NE11"
+        ]
+    },
+    "NE11": {
+        "name": "Woodleigh",
+        "edges": [
+            "NE10",
+            "NE12 CC13"
+        ]
+    },
+    "NE12 CC13": {
+        "name": "Serangoon",
+        "edges": [
+            "NE11",
+            "NE13",
+            "CC12",
+            "CC14"
+        ]
+    },
+    "NE13": {
+        "name": "Kovan",
+        "edges": [
+            "NE12 CC13",
+            "NE14"
+        ]
+    },
+    "NE14": {
+        "name": "Hougang",
+        "edges": [
+            "NE13",
+            "NE15"
+        ]
+    },
+    "NE15": {
+        "name": "Buangkok",
+        "edges": [
+            "NE14",
+            "NE16 STC"
+        ]
+    },
+    "NE16 STC": {
+        "name": "Sengkang",
+        "edges": [
+            "NE15",
+            "NE17 PTC"
+        ]
+    },
+    "NE17 PTC": {
+        "name": "Punggol",
+        "edges": [
+            "NE16 STC"
+        ]
+    },
+    "CC1 NS24 NE6": {
+        "name": "Dhoby Ghaut",
+        "edges": [
+            "EW21 CC22",
+            "NS23",
+            "NS25 EW13",
+            "NE5",
+            "NE7 DT12"
+        ]
+    },
+    "CC2": {
+        "name": "Bras Basah",
+        "edges": [
+            "NS17 CC15",
+            "CC3"
+        ]
+    },
+    "CC3": {
+        "name": "Esplanade",
+        "edges": [
+            "EW21 CC22",
+            "CC4 DT15"
+        ]
+    },
+    "CC4 DT15": {
+        "name": "Promenade",
+        "edges": [
+            "CC3",
+            "CC5",
+            "EW12 DT14",
+            "CE1 DT16"
+        ]
+    },
+    "CC5": {
+        "name": "Nicoll Highway",
+        "edges": [
+            "CC4 DT15",
+            "CC6"
+        ]
+    },
+    "CC6": {
+        "name": "Stadium",
+        "edges": [
+            "CC5",
+            "CC7"
+        ]
+    },
+    "CC7": {
+        "name": "Mountbatten",
+        "edges": [
+            "CC6",
+            "CC8"
+        ]
+    },
+    "CC8": {
+        "name": "Dakota",
+        "edges": [
+            "CC7",
+            "EW8 CC9"
+        ]
+    },
+    "CC9 EW8": {
+        "name": "Paya Lebar",
+        "edges": [
+            "CC8",
+            "CC10 DT26",
+            "EW7",
+            "EW9"
+        ]
+    },
+    "CC10 DT26": {
+        "name": "MacPherson",
+        "edges": [
+            "EW8 CC9",
+            "CC11",
+            "DT25",
+            "DT27"
+        ]
+    },
+    "CC11": {
+        "name": "Tai Seng",
+        "edges": [
+            "CC10 DT26",
+            "CC12"
+        ]
+    },
+    "CC12": {
+        "name": "Bartley",
+        "edges": [
+            "CC11",
+            "NE12 CC13"
+        ]
+    },
+    "CC13 NE12": {
+        "name": "Serangoon",
+        "edges": [
+            "CC12",
+            "CC14",
+            "NE11",
+            "NE13"
+        ]
+    },
+    "CC14": {
+        "name": "Lorong Chuan",
+        "edges": [
+            "NE12 CC13",
+            "NS17 CC15"
+        ]
+    },
+    "CC15 NS17": {
+        "name": "Bishan",
+        "edges": [
+            "CC14",
+            "CC16",
+            "NS16",
+            "NS18"
+        ]
+    },
+    "CC16": {
+        "name": "Marymount",
+        "edges": [
+            "NS17 CC15",
+            "CC17"
+        ]
+    },
+    "CC17": {
+        "name": "Caldecott",
+        "edges": [
+            "CC16",
+            "CC19 DT9"
+        ]
+    },
+    "CC19 DT9": {
+        "name": "Botanic Gardens",
+        "edges": [
+            "CC17",
+            "CC20",
+            "DT8",
+            "DT10"
+        ]
+    },
+    "CC20": {
+        "name": "Farrer Road",
+        "edges": [
+            "CC19 DT9",
+            "CC21"
+        ]
+    },
+    "CC21": {
+        "name": "Holland Village",
+        "edges": [
+            "CC20",
+            "EW21 CC22"
+        ]
+    },
+    "CC22 EW21": {
+        "name": "Buona Vista",
+        "edges": [
+            "CC21",
+            "CC23",
+            "EW20",
+            "EW22"
+        ]
+    },
+    "CC23": {
+        "name": "one-north",
+        "edges": [
+            "EW21 CC22",
+            "CC24"
+        ]
+    },
+    "CC24": {
+        "name": "Kent Ridge",
+        "edges": [
+            "CC23",
+            "CC25"
+        ]
+    },
+    "CC25": {
+        "name": "Haw Par Villa",
+        "edges": [
+            "CC24",
+            "CC26"
+        ]
+    },
+    "CC26": {
+        "name": "Pasir Panjang",
+        "edges": [
+            "CC25",
+            "CC27"
+        ]
+    },
+    "CC27": {
+        "name": "Labrador Park",
+        "edges": [
+            "CC26",
+            "CC28"
+        ]
+    },
+    "CC28": {
+        "name": "Telok Blangah",
+        "edges": [
+            "CC27",
+            "NE1 CC29"
+        ]
+    },
+    "CC29 NE1": {
+        "name": "HarbourFront",
+        "edges": [
+            "CC28",
+            "EW16 NE3"
+        ]
+    },
+    "CE1 DT16": {
+        "name": "Bayfront",
+        "edges": [
+            "NS27 CE2",
+            "CC4 DT15",
+            "DT17"
+        ]
+    },
+    "CE2 NS27": {
+        "name": "Marina Bay",
+        "edges": [
+            "CE1 DT16",
+            "NS26 EW14",
+            "NS28"
+        ]
+    },
+    "DT1 BP6": {
+        "name": "Bukit Panjang",
+        "edges": [
+            "CC10 DT26",
+            "NS4 BP1"
+        ]
+    },
+    "DT2": {
+        "name": "Cashew",
+        "edges": [
+            "NS21 DT11",
+            "EW2 DT32"
+        ]
+    },
+    "DT3": {
+        "name": "Hillview",
+        "edges": [
+            "CC10 DT26",
+            "DT5"
+        ]
+    },
+    "DT5": {
+        "name": "Beauty World",
+        "edges": [
+            "EW2 DT32",
+            "DT6"
+        ]
+    },
+    "DT6": {
+        "name": "King Albert Park",
+        "edges": [
+            "DT5",
+            "DT7"
+        ]
+    },
+    "DT7": {
+        "name": "Sixth Avenue",
+        "edges": [
+            "DT6",
+            "DT8"
+        ]
+    },
+    "DT8": {
+        "name": "Tan Kah Kee",
+        "edges": [
+            "DT7",
+            "CC19 DT9"
+        ]
+    },
+    "DT9 CC19": {
+        "name": "Botanic Gardens",
+        "edges": [
+            "DT8",
+            "DT10",
+            "CC17",
+            "CC20"
+        ]
+    },
+    "DT10": {
+        "name": "Stevens",
+        "edges": [
+            "CC19 DT9",
+            "NS21 DT11"
+        ]
+    },
+    "DT11 NS21": {
+        "name": "Newton",
+        "edges": [
+            "DT10",
+            "NE7 DT12",
+            "NS20",
+            "NS22"
+        ]
+    },
+    "DT12 NE7": {
+        "name": "Little India",
+        "edges": [
+            "NS21 DT11",
+            "DT13",
+            "NS24 NE6 CC1",
+            "NE8"
+        ]
+    },
+    "DT13": {
+        "name": "Rochor",
+        "edges": [
+            "NE7 DT12",
+            "EW12 DT14"
+        ]
+    },
+    "DT14 EW12": {
+        "name": "Bugis",
+        "edges": [
+            "DT13",
+            "CC4 DT15",
+            "EW11",
+            "NS25 EW13"
+        ]
+    },
+    "DT15 CC4": {
+        "name": "Promenade",
+        "edges": [
+            "EW12 DT14",
+            "CE1 DT16",
+            "CC3",
+            "CC5"
+        ]
+    },
+    "DT16 CE1": {
+        "name": "Bayfront",
+        "edges": [
+            "CC4 DT15",
+            "DT17",
+            "NS27 CE2"
+        ]
+    },
+    "DT17": {
+        "name": "Downtown",
+        "edges": [
+            "CE1 DT16",
+            "DT18"
+        ]
+    },
+    "DT18": {
+        "name": "Telok Ayer",
+        "edges": [
+            "DT17",
+            "NE4 DT19"
+        ]
+    },
+    "DT19 NE4": {
+        "name": "Chinatown",
+        "edges": [
+            "DT18",
+            "DT20",
+            "EW16 NE3",
+            "NE5"
+        ]
+    },
+    "DT20": {
+        "name": "Fort Canning",
+        "edges": [
+            "NE4 DT19",
+            "DT21"
+        ]
+    },
+    "DT21": {
+        "name": "Bencoolen",
+        "edges": [
+            "DT20",
+            "DT22"
+        ]
+    },
+    "DT22": {
+        "name": "Jalan Besar",
+        "edges": [
+            "DT21",
+            "DT23"
+        ]
+    },
+    "DT23": {
+        "name": "Bendemeer",
+        "edges": [
+            "DT22",
+            "DT24"
+        ]
+    },
+    "DT24": {
+        "name": "Geylang Bahru",
+        "edges": [
+            "DT23",
+            "DT25"
+        ]
+    },
+    "DT25": {
+        "name": "Mattar",
+        "edges": [
+            "DT24",
+            "CC10 DT26"
+        ]
+    },
+    "DT26 CC10": {
+        "name": "MacPherson",
+        "edges": [
+            "DT25",
+            "DT27",
+            "EW8 CC9",
+            "CC11"
+        ]
+    },
+    "DT27": {
+        "name": "Ubi",
+        "edges": [
+            "CC10 DT26",
+            "DT28"
+        ]
+    },
+    "DT28": {
+        "name": "Kaki Bukit",
+        "edges": [
+            "DT27",
+            "DT29"
+        ]
+    },
+    "DT29": {
+        "name": "Bedok North",
+        "edges": [
+            "DT28",
+            "DT30"
+        ]
+    },
+    "DT30": {
+        "name": "Bedok Reservoir",
+        "edges": [
+            "DT29",
+            "DT31"
+        ]
+    },
+    "DT31": {
+        "name": "Tampines West",
+        "edges": [
+            "DT30",
+            "EW2 DT32"
+        ]
+    },
+    "DT32 EW2": {
+        "name": "Tampines",
+        "edges": [
+            "DT31",
+            "DT33",
+            "NS25 EW13",
+            "EW3"
+        ]
+    },
+    "DT33": {
+        "name": "Tampines East",
+        "edges": [
+            "EW2 DT32",
+            "DT34"
+        ]
+    },
+    "DT34": {
+        "name": "Upper Changi",
+        "edges": [
+            "DT33",
+            "CG1 DT35"
+        ]
+    },
+    "DT35 CG1": {
+        "name": "Expo",
+        "edges": [
+            "DT34"
+        ]
+    },
+    "TE1": {
+        "name": "Woodlands North",
+        "edges": [
+            "NS9 TE2"
+        ]
+    },
+    "TE2 NS9": {
+        "name": "Woodlands",
+        "edges": [
+            "TE1",
+            "TE3",
+            "NS8",
+            "NS10"
+        ]
+    },
+    "TE3": {
+        "name": "Woodlands South",
+        "edges": [
+            "NS9 TE2"
+        ]
+    }
+}
