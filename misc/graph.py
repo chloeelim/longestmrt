@@ -1,3 +1,4 @@
+import sys
 import time
 import json
 from heapq import heappop, heappush
@@ -5,6 +6,7 @@ from heapq import heappop, heappush
 with open("adj.json") as f:
     data = json.load(f)
     code_to_index = {code: index for index, code in enumerate(data.keys())}
+    index_to_code = {index: code for index, code in enumerate(data.keys())}
 
 
 # test: DT2, TE4
@@ -51,3 +53,24 @@ def longest_path(start, end):
                     pq, (shortest[code_to_index[node]][code_to_index[edge]], currdist + 1, edge, path + [node]))
 
     return ans_path
+
+
+codes = list(data.keys())
+path_data = {}
+n = len(codes)
+# for i in range(n):
+#     for j in range(i + 1, n):
+#         start, end = index_to_code[i], index_to_code[j]
+#         path_data[f"{start}-{end}"] = longest_path(start, end)
+#         with open("shortest.json", 'w') as f:
+#             json.dump(path_data, f, indent=4)
+#         with open("shortest1.json", 'w') as f:
+#             json.dump(path_data, f, indent=4)
+
+
+i = int(sys.argv[1])
+for j in range(i + 1, n):
+    start, end = index_to_code[i], index_to_code[j]
+    path_data[f"{start}-{end}"] = longest_path(start, end)
+    with open(f"shortest-{i}-{index_to_code[i]}.json", 'w') as f:
+        json.dump(path_data, f, indent=4)
