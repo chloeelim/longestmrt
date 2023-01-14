@@ -65,14 +65,14 @@ def craft_adj_list():
                     if prev:
                         target = f"{line}{max(prev)}"
                         station_data['edges'].append(
-                            [code for code in station_codes if target in code][0] if max(prev) else [code for code in station_codes if line in code][0])
+                            [code for code in station_codes if target in code.split(" ")][0] if max(prev) else [code for code in station_codes if line in code][0])
 
                     next = [int(c[2:]) if c[2:] else 0 for c in station_codes_flattened if c.startswith(
                         line) and int(c[2:]) > number]
                     if next:
                         target = f"{line}{min(next)}"
                         station_data['edges'].append(
-                            [code for code in station_codes if target in code][0])
+                            [code for code in station_codes if target in code.split(" ")][0])
             except:
                 print("stupid mrt:", code)
 

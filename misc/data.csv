@@ -19,7 +19,7 @@ NS18,Braddell,Red,North South
 NS19,Toa Payoh,Red,North South
 NS20,Novena,Red,North South
 NS21 DT11,Newton,Red,North South
-NS22,Orchard,Red,North South
+NS22 TE14,Orchard,Red,North South
 NS23,Somerset,Red,North South
 NS24 NE6 CC1,Dhoby Ghaut,Red,North South
 NS25 EW13,City Hall,Red,North South
@@ -41,7 +41,7 @@ EW12 DT14,Bugis,Green,East West
 EW13 NS25,City Hall,Green,East West
 EW14 NS26,Raffles Place,Green,East West
 EW15,Tanjong Pagar,Green,East West
-EW16 NE3,Outram Park,Green,East West
+EW16 NE3 TE17,Outram Park,Green,East West
 EW17,Tiong Bahru,Green,East West
 EW18,Redhill,Green,East West
 EW19,Queenstown,Green,East West
@@ -93,7 +93,7 @@ CC13 NE12,Serangoon,Orange,Circle
 CC14,Lorong Chuan,Orange,Circle
 CC15 NS17,Bishan,Orange,Circle
 CC16,Marymount,Orange,Circle
-CC17,Caldecott,Orange,Circle
+CC17 TE9,Caldecott,Orange,Circle
 CC19 DT9,Botanic Gardens,Orange,Circle
 CC20,Farrer Road,Orange,Circle
 CC21,Holland Village,Orange,Circle
@@ -106,7 +106,7 @@ CC27,Labrador Park,Orange,Circle
 CC28,Telok Blangah,Orange,Circle
 CC29 NE1,HarbourFront,Orange,Circle
 CE1 DT16,Bayfront,Orange,Circle Extension
-CE2 NS27,Marina Bay,Orange,Circle Extension
+CE2 NS27 TE20,Marina Bay,Orange,Circle Extension
 DT1 BP6,Bukit Panjang,Blue,Downtown
 DT2,Cashew,Blue,Downtown
 DT3,Hillview,Blue,Downtown
@@ -115,7 +115,7 @@ DT6,King Albert Park,Blue,Downtown
 DT7,Sixth Avenue,Blue,Downtown
 DT8,Tan Kah Kee,Blue,Downtown
 DT9 CC19,Botanic Gardens,Blue,Downtown
-DT10,Stevens,Blue,Downtown
+DT10 TE11,Stevens,Blue,Downtown
 DT11 NS21,Newton,Blue,Downtown
 DT12 NE7,Little India,Blue,Downtown
 DT13,Rochor,Blue,Downtown
@@ -144,3 +144,53 @@ DT35 CG1,Expo,Blue,Downtown
 TE1,Woodlands North,Brown,Thomson–East Coast
 TE2 NS9,Woodlands,Brown,Thomson–East Coast
 TE3,Woodlands South,Brown,Thomson–East Coast
+BP2,South View,,
+BP3,Keat Hong,,
+BP4,Teck Whye,,
+BP5,Phoenix,,
+BP7,Petir,,
+BP8,Pending,,
+BP9,Bangkit,,
+BP10,Fajar,,
+BP11,Segar,,
+BP12,Jelapang,,
+BP13,Senja,,
+TE4,Springleaf,,
+TE5,Lentor,,
+TE6,Mayflower,,
+TE7,Bright Hill,,
+TE8,Upper THomson,,
+TE12,Napier,,
+TE13,Orchard Boulevard,,
+TE15,Great World,,
+TE16,Havelock,,
+TE18,Maxwell,,
+TE19,Shenton Way,,
+TE22,Gardens by the Bay,,
+SW1,Cheng Lim,,
+SW2,Farmway,,
+SW3,Kupang,,
+SW4,Thanggam,,
+SW5,Fernvale,,
+SW6,Layar,,
+SW7,Tongkang,,
+SW8,Renjong,,
+SE1,Compassville,,
+SE2,Rumbia,,
+SE3,Bakau,,
+SE4,Kangkar,,
+SE5,Ranggung,,
+PW1,Sam Kee,,
+PW2,Teck Lee,,
+PW3,Punggol Point,,
+PW4,Samudera,,
+PW5,Nibong,,
+PW6,Sumang,,
+PW7,Soo Teck,,
+PE1,Cove,,
+PE2,Meridian,,
+PE3,Coral Edge,,
+PE4,Riviera,,
+PE5,Kadaloor,,
+PE6,Oasis,,
+PE7,Damai,,
