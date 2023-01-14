@@ -29,6 +29,9 @@ function App() {
 
   function handleSubmit(e) {
     e.preventDefault();
+    document.querySelectorAll("circle").forEach((circle) => {
+      circle.style.fill = "white";
+    });
     axios
       .get("http://127.0.0.1:5001/shortest", {
         headers: {
