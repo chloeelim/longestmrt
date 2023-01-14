@@ -6,6 +6,8 @@ import {
   Select,
   MenuItem,
   Button,
+  Switch,
+  Typography,
 } from "@mui/material";
 import { useState } from "react";
 import axios from "axios";
@@ -16,6 +18,7 @@ function App() {
   const [end, setEnd] = useState("");
   const [data, setData] = useState({});
   const [path, setPath] = useState([]);
+  const [shortest, setShortest] = useState(true);
 
   useState(() => {
     axios
@@ -33,15 +36,20 @@ function App() {
       circle.style.fill = "white";
     });
     axios
-      .get("http://127.0.0.1:5001/longest", {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
-        params: {
-          s: start,
-          e: end,
-        },
-      })
+      .get(
+        shortest
+          ? "http://127.0.0.1:5001/shortest"
+          : "http://127.0.0.1:5001/longest",
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+          },
+          params: {
+            s: start,
+            e: end,
+          },
+        }
+      )
       .then((res) => {
         setPath(res.data.path);
       });
@@ -83,6 +91,14 @@ function App() {
                 ))}
               </Select>
             </FormControl>
+            <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
+              <Switch
+                defaultChecked
+                value={shortest}
+                onChange={() => setShortest(!shortest)}
+              ></Switch>
+              <Typography>Shortest</Typography>
+            </Box>
             <Button variant="contained" color="primary" type="submit">
               Submit
             </Button>
