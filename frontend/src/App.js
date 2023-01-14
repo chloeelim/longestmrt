@@ -33,7 +33,7 @@ function App() {
       circle.style.fill = "white";
     });
     axios
-      .get("http://127.0.0.1:5001/shortest", {
+      .get("http://127.0.0.1:5001/longest", {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
