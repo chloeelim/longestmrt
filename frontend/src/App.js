@@ -1,4 +1,5 @@
 import "./App.css";
+import logo from "./stupidsmrtlogo.svg";
 import {
   Box,
   FormControl,
@@ -73,6 +74,7 @@ function App() {
           justifyContent: "center",
         }}
       >
+        <img src={logo} alt="stupid mrt logo" style={{width: "300px", alignSelf: "center"}}/>
         <form onSubmit={handleSubmit}>
           <Box sx={{ m: 1, display: "flex", flexDirection: "column", gap: 1 }}>
             <FormControl fullWidth>
