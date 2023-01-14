@@ -113,7 +113,19 @@ function App() {
             <Button variant="contained" color="secondary" onClick={replay}>
               Replay
             </Button>
-            {JSON.stringify(path)}
+            {path.length > 0 && (
+              <Box
+                sx={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Typography variant="h2">{path.length}</Typography>
+                <Typography variant="h5">stations</Typography>
+              </Box>
+            )}
           </Box>
         </form>
       </aside>
