@@ -1,0 +1,8 @@
+circle {
+    transition: 1s;
+}
+
+circle:hover {
+    r: 15px;
+    stroke: coral;
+}
