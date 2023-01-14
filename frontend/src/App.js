@@ -30,6 +30,13 @@ function App() {
       .then((res) => setData(res.data));
   }, []);
 
+  function replay() {
+    document.querySelectorAll("circle").forEach((circle) => {
+      circle.style.fill = "white";
+    });
+    setTimeout(() => setPath([...path]), 500);
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     document.querySelectorAll("circle").forEach((circle) => {
@@ -102,6 +109,9 @@ function App() {
             </Box>
             <Button variant="contained" color="primary" type="submit">
               Submit
+            </Button>
+            <Button variant="contained" color="secondary" onClick={replay}>
+              Replay
             </Button>
             {JSON.stringify(path)}
           </Box>
