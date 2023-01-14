@@ -7,14 +7,15 @@
 #app {
   display: grid;
   grid-template-columns: 25% 1fr;
+  background-color: #ffffe5;
 }
 aside {
-  background-color: green;
+  background-color: #cabea9;
   min-height: 100vh;
+  margin-right: 25px;
 }
 
 main {
-  background-color: yellow;
   min-height: 100vh;
 }
 

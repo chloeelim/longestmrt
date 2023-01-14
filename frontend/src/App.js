@@ -59,7 +59,6 @@ function App() {
     <div id="app">
       <aside
         style={{
-          backgroundColor: "lightblue",
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
@@ -73,6 +72,7 @@ function App() {
                 value={start}
                 label="Start"
                 onChange={(e) => setStart(e.target.value)}
+                sx={{ backgroundColor: "#ffffe5" }}
               >
                 {Object.entries(data).map(([k, v]) => (
                   <MenuItem value={k}>{v + ` (${k})`}</MenuItem>
@@ -85,6 +85,7 @@ function App() {
                 value={end}
                 label="Start"
                 onChange={(e) => setEnd(e.target.value)}
+                sx={{ backgroundColor: "#ffffe5" }}
               >
                 {Object.entries(data).map(([k, v]) => (
                   <MenuItem value={k}>{v + ` (${k})`}</MenuItem>
