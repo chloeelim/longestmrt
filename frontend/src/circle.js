@@ -10,6 +10,7 @@ function Circle({
   strokeWidth,
   strokeLinecap,
   path,
+  delay,
 }) {
   id = id[2] === "0" ? id.substring(0, 2) + id.substring(3) : id;
   id = id.toUpperCase();
@@ -34,7 +35,7 @@ function Circle({
           c + (f - c) * ((1 + index) / (n + 1))
         })`;
       };
-      const timeout = setTimeout(func, (index + 1.5) * 500);
+      const timeout = setTimeout(func, (index + 1.5) * delay);
       return () => clearTimeout(timeout);
     }
   }, [path]);

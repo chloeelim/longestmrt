@@ -22,3 +22,11 @@ main {
 svg {
   width: 100%;
 }
+
+circle {
+  transition: 1s;
+}
+circle:hover {
+  r: 15;
+  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.4));
+}

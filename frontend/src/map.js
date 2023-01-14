@@ -1,6 +1,6 @@
 import Circle from "./circle";
 
-function Map({ path }) {
+function Map({ path, delay }) {
   return (
     <svg
       width="1464"
@@ -139,6 +139,7 @@ function Map({ path }) {
           <g id="circle line circles">
             <Circle
               path={path}
+              delay={delay}
               id="cc29"
               cx="563"
               cy="941"
@@ -149,6 +150,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc22"
               cx="374"
               cy="638"
@@ -159,6 +161,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc19"
               cx="430"
               cy="450"
@@ -169,6 +172,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc17"
               cx="539"
               cy="355"
@@ -179,6 +183,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc15"
               cx="677"
               cy="311"
@@ -189,6 +194,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc13"
               cx="857"
               cy="351"
@@ -199,6 +205,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc10"
               cx="999"
               cy="501"
@@ -209,6 +216,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc09"
               cx="1019"
               cy="575"
@@ -219,6 +227,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc04"
               cx="956"
               cy="838"
@@ -229,6 +238,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ce02"
               cx="791"
               cy="954"
@@ -239,6 +249,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ce01"
               cx="900"
               cy="902"
@@ -249,6 +260,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc01"
               cx="696"
               cy="703"
@@ -259,6 +271,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc28"
               cx="499.5"
               cy="899.5"
@@ -269,6 +282,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc27"
               cx="458.5"
               cy="864.5"
@@ -279,6 +293,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc26"
               cx="426.5"
               cy="820.5"
@@ -289,6 +304,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc25"
               cx="405.5"
               cy="783.5"
@@ -299,6 +315,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc23"
               cx="373.5"
               cy="687.5"
@@ -309,6 +326,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc21"
               cx="378.5"
               cy="566.5"
@@ -319,6 +337,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc20"
               cx="400.5"
               cy="510.5"
@@ -329,6 +348,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc16"
               cx="594.5"
               cy="325.5"
@@ -339,6 +359,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc14"
               cx="774.5"
               cy="319.5"
@@ -349,6 +370,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc12"
               cx="918.5"
               cy="395.5"
@@ -359,6 +381,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc11"
               cx="966.5"
               cy="441.5"
@@ -369,6 +392,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc16_2"
               cx="1027.5"
               cy="633.5"
@@ -379,6 +403,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc08"
               cx="1027.5"
               cy="633.5"
@@ -389,6 +414,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc07"
               cx="1027.5"
               cy="685.5"
@@ -399,6 +425,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc05"
               cx="998.5"
               cy="788.5"
@@ -409,6 +436,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc02"
               cx="790.5"
               cy="736.5"
@@ -419,6 +447,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc03"
               cx="870.5"
               cy="815.5"
@@ -429,6 +458,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc06"
               cx="1016.5"
               cy="736.5"
@@ -439,6 +469,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cc24"
               cx="386.5"
               cy="737.5"
@@ -452,6 +483,7 @@ function Map({ path }) {
           <g id="green line circles">
             <Circle
               path={path}
+              delay={delay}
               id="ew33"
               cx="13.5"
               cy="311.5"
@@ -462,6 +494,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew31"
               cx="13.5"
               cy="408.5"
@@ -472,6 +505,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew26"
               cx="67.5"
               cy="640.5"
@@ -482,6 +516,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew17"
               cx="546.5"
               cy="770.5"
@@ -492,6 +527,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew18"
               cx="508.5"
               cy="736.5"
@@ -502,6 +538,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew16"
               cx="599"
               cy="813"
@@ -512,6 +549,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew15"
               cx="638.5"
               cy="885.5"
@@ -522,6 +560,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew11"
               cx="909.5"
               cy="685.5"
@@ -532,6 +571,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew10"
               cx="947.5"
               cy="651.5"
@@ -542,6 +582,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew09"
               cx="982.5"
               cy="618.5"
@@ -552,6 +593,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew03"
               cx="1308.5"
               cy="396.5"
@@ -562,6 +604,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew01"
               cx="1308.5"
               cy="310.5"
@@ -572,6 +615,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cg2"
               cx="1439.5"
               cy="488.5"
@@ -582,6 +626,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="cg1"
               cx="1381.5"
               cy="488.5"
@@ -592,6 +637,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew02"
               cx="1321.5"
               cy="369.5"
@@ -602,6 +648,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew05"
               cx="1197.5"
               cy="428.5"
@@ -612,6 +659,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew06"
               cx="1124.5"
               cy="474.5"
@@ -622,6 +670,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew07"
               cx="1072.5"
               cy="519.5"
@@ -632,6 +681,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew19"
               cx="465.5"
               cy="700.5"
@@ -642,6 +692,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew20"
               cx="420.5"
               cy="673.5"
@@ -652,6 +703,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew22"
               cx="314.5"
               cy="643.5"
@@ -662,6 +714,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew23"
               cx="267.5"
               cy="643.5"
@@ -672,6 +725,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew25"
               cx="125.5"
               cy="640.5"
@@ -682,6 +736,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew27"
               cx="17.5"
               cy="586.5"
@@ -692,6 +747,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew28"
               cx="13.5"
               cy="542.5"
@@ -702,6 +758,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew29"
               cx="13.5"
               cy="498.5"
@@ -712,6 +769,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew30"
               cx="13.5"
               cy="452.5"
@@ -722,6 +780,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew32"
               cx="13.5"
               cy="357.5"
@@ -732,6 +791,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew24"
               cx="186"
               cy="644"
@@ -742,6 +802,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew14"
               cx="782"
               cy="862"
@@ -752,6 +813,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew13"
               cx="782"
               cy="813"
@@ -762,6 +824,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew12"
               cx="871"
               cy="729"
@@ -772,6 +835,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ew04"
               cx="1293"
               cy="426"
@@ -785,6 +849,7 @@ function Map({ path }) {
           <g id="red line circles">
             <Circle
               path={path}
+              delay={delay}
               id="ns2"
               cx="185.5"
               cy="539.5"
@@ -795,6 +860,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns3"
               cx="185.5"
               cy="466.5"
@@ -805,6 +871,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns10"
               cx="421.5"
               cy="84.5"
@@ -815,6 +882,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns9"
               cx="349"
               cy="82"
@@ -825,6 +893,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns21"
               cx="625"
               cy="487"
@@ -835,6 +904,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns4"
               cx="188"
               cy="379"
@@ -845,6 +915,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns22"
               cx="549"
               cy="575"
@@ -855,6 +926,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns11"
               cx="491.5"
               cy="84.5"
@@ -865,6 +937,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns12"
               cx="561.5"
               cy="84.5"
@@ -875,6 +948,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns13"
               cx="631.5"
               cy="107.5"
@@ -885,6 +959,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns14"
               cx="669.5"
               cy="151.5"
@@ -895,6 +970,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns15"
               cx="676.5"
               cy="204.5"
@@ -905,6 +981,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns16"
               cx="679.5"
               cy="256.5"
@@ -915,6 +992,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns23"
               cx="601.5"
               cy="630.5"
@@ -925,6 +1003,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns28"
               cx="846.5"
               cy="984.5"
@@ -935,6 +1014,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns20"
               cx="649.5"
               cy="457.5"
@@ -945,6 +1025,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns19"
               cx="676.5"
               cy="404.5"
@@ -955,6 +1036,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns18"
               cx="676.5"
               cy="352.5"
@@ -965,6 +1047,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns8"
               cx="232.5"
               cy="106.5"
@@ -975,6 +1058,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns7"
               cx="185.5"
               cy="203.5"
@@ -985,6 +1069,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ns5"
               cx="185.5"
               cy="292.5"
@@ -998,6 +1083,7 @@ function Map({ path }) {
           <g id="brown line circles">
             <Circle
               path={path}
+              delay={delay}
               id="te1"
               cx="300.5"
               cy="29.5"
@@ -1008,6 +1094,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te3"
               cx="383.5"
               cy="115.5"
@@ -1018,6 +1105,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te4"
               cx="416.5"
               cy="148.5"
@@ -1028,6 +1116,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te5"
               cx="443.5"
               cy="181.5"
@@ -1038,6 +1127,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te6"
               cx="478.5"
               cy="215.5"
@@ -1048,6 +1138,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te7"
               cx="512.5"
               cy="246.5"
@@ -1058,6 +1149,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te8"
               cx="536.5"
               cy="305.5"
@@ -1068,6 +1160,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te12"
               cx="541.5"
               cy="493.5"
@@ -1078,6 +1171,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te15"
               cx="541.5"
               cy="624.5"
@@ -1088,6 +1182,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te16"
               cx="536.5"
               cy="673.5"
@@ -1098,6 +1193,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te11"
               cx="544"
               cy="450"
@@ -1108,6 +1204,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te22"
               cx="1016.5"
               cy="892.5"
@@ -1118,6 +1215,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te18"
               cx="652.5"
               cy="851.5"
@@ -1128,6 +1226,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te19"
               cx="731.5"
               cy="924.5"
@@ -1138,6 +1237,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="te13"
               cx="541.5"
               cy="532.5"
@@ -1151,6 +1251,7 @@ function Map({ path }) {
           <g id="blue line circles">
             <Circle
               path={path}
+              delay={delay}
               id="dt1"
               cx="301"
               cy="237"
@@ -1161,6 +1262,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt12"
               cx="733"
               cy="591"
@@ -1171,6 +1273,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt19"
               cx="637"
               cy="768"
@@ -1181,6 +1284,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt2"
               cx="300.5"
               cy="282.5"
@@ -1191,6 +1295,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt3"
               cx="300.5"
               cy="318.5"
@@ -1201,6 +1306,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt7"
               cx="303.5"
               cy="427.5"
@@ -1211,6 +1317,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt13"
               cx="781.5"
               cy="637.5"
@@ -1221,6 +1328,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt22"
               cx="847.5"
               cy="661.5"
@@ -1231,6 +1339,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt21"
               cx="806.5"
               cy="698.5"
@@ -1241,6 +1350,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt20"
               cx="631.5"
               cy="715.5"
@@ -1251,6 +1361,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt17"
               cx="832.5"
               cy="919.5"
@@ -1261,6 +1372,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt18"
               cx="736.5"
               cy="861.5"
@@ -1271,6 +1383,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt23"
               cx="896.5"
               cy="604.5"
@@ -1281,6 +1394,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt24"
               cx="930.5"
               cy="574.5"
@@ -1291,6 +1405,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt25"
               cx="968.5"
               cy="537.5"
@@ -1301,6 +1416,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt27"
               cx="1048.5"
               cy="461.5"
@@ -1311,6 +1427,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt28"
               cx="1089.5"
               cy="419.5"
@@ -1321,6 +1438,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt29"
               cx="1124.5"
               cy="381.5"
@@ -1331,6 +1449,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt30"
               cx="1183.5"
               cy="369.5"
@@ -1341,6 +1460,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt31"
               cx="1251.5"
               cy="369.5"
@@ -1351,6 +1471,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt33"
               cx="1383.5"
               cy="401.5"
@@ -1361,6 +1482,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt34"
               cx="1383.5"
               cy="437.5"
@@ -1371,6 +1493,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt8"
               cx="353.5"
               cy="447.5"
@@ -1381,6 +1504,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt6"
               cx="300.5"
               cy="386.5"
@@ -1391,6 +1515,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="dt5"
               cx="300.5"
               cy="352.5"
@@ -1404,6 +1529,7 @@ function Map({ path }) {
           <g id="circle line circles_2">
             <Circle
               path={path}
+              delay={delay}
               id="ne05"
               cx="669.5"
               cy="736.5"
@@ -1414,6 +1540,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ne10"
               cx="760.5"
               cy="441.5"
@@ -1424,6 +1551,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ne11"
               cx="802.5"
               cy="395.5"
@@ -1434,6 +1562,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ne13"
               cx="891.5"
               cy="308.5"
@@ -1444,6 +1573,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ne14"
               cx="927.5"
               cy="273.5"
@@ -1454,6 +1584,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ne15"
               cx="962.5"
               cy="244.5"
@@ -1464,6 +1595,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ne09"
               cx="730.5"
               cy="489.5"
@@ -1474,6 +1606,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ne08"
               cx="730.5"
               cy="537.5"
@@ -1484,6 +1617,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ne16"
               cx="995"
               cy="209"
@@ -1494,6 +1628,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="ne17"
               cx="1075"
               cy="127"
@@ -1507,6 +1642,7 @@ function Map({ path }) {
           <g id="bp lrt line circles">
             <Circle
               path={path}
+              delay={delay}
               id="bp2"
               cx="213.5"
               cy="341.5"
@@ -1517,6 +1653,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp3"
               cx="213.5"
               cy="301.5"
@@ -1527,6 +1664,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp4"
               cx="213.5"
               cy="264.5"
@@ -1537,6 +1675,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp13"
               cx="280.5"
               cy="190.5"
@@ -1547,6 +1686,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp12"
               cx="277.5"
               cy="163.5"
@@ -1557,6 +1697,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp11"
               cx="277.5"
               cy="131.5"
@@ -1567,6 +1708,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp10"
               cx="303.5"
               cy="120.5"
@@ -1577,6 +1719,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp09"
               cx="323.5"
               cy="140.5"
@@ -1587,6 +1730,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp08"
               cx="323.5"
               cy="167.5"
@@ -1597,6 +1741,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp07"
               cx="316.5"
               cy="194.5"
@@ -1607,6 +1752,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="bp5"
               cx="251.5"
               cy="228.5"
@@ -1620,6 +1766,7 @@ function Map({ path }) {
           <g id="other lrt line circles">
             <Circle
               path={path}
+              delay={delay}
               id="sw1"
               cx="971.5"
               cy="156.5"
@@ -1630,6 +1777,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="sw2"
               cx="955.5"
               cy="135.5"
@@ -1640,6 +1788,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="sw3"
               cx="937.5"
               cy="118.5"
@@ -1650,6 +1799,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="sw5"
               cx="889.5"
               cy="129.5"
@@ -1660,6 +1810,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="sw7"
               cx="921.5"
               cy="169.5"
@@ -1670,6 +1821,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="se1"
               cx="1062.5"
               cy="246.5"
@@ -1680,6 +1832,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pe1"
               cx="1097.5"
               cy="175.5"
@@ -1690,6 +1843,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pe2"
               cx="1115.5"
               cy="199.5"
@@ -1700,6 +1854,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pe3"
               cx="1135.5"
               cy="219.5"
@@ -1710,6 +1865,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pe4"
               cx="1167.5"
               cy="216.5"
@@ -1720,6 +1876,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pe5"
               cx="1167.5"
               cy="190.5"
@@ -1730,6 +1887,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pe6"
               cx="1152.5"
               cy="169.5"
@@ -1740,6 +1898,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pe7"
               cx="1129.5"
               cy="152.5"
@@ -1750,6 +1909,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pw1"
               cx="1051.5"
               cy="74.5"
@@ -1760,6 +1920,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pw3"
               cx="1020.5"
               cy="33.5"
@@ -1770,6 +1931,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pw4"
               cx="985.5"
               cy="33.5"
@@ -1780,6 +1942,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pw5"
               cx="974.5"
               cy="63.5"
@@ -1790,6 +1953,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pw6"
               cx="994.5"
               cy="83.5"
@@ -1800,6 +1964,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="pw7"
               cx="1015.5"
               cy="101.5"
@@ -1810,6 +1975,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="se2"
               cx="1085.5"
               cy="269.5"
@@ -1820,6 +1986,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="se3"
               cx="1085.5"
               cy="301.5"
@@ -1830,6 +1997,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="se4"
               cx="1046.5"
               cy="298.5"
@@ -1840,6 +2008,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="se5"
               cx="1023.5"
               cy="274.5"
@@ -1850,6 +2019,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="sw8"
               cx="943.5"
               cy="184.5"
@@ -1860,6 +2030,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="sw6"
               cx="898.5"
               cy="154.5"
@@ -1870,6 +2041,7 @@ function Map({ path }) {
             />
             <Circle
               path={path}
+              delay={delay}
               id="sw4"
               cx="909.5"
               cy="112.5"
