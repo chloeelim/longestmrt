@@ -22,6 +22,7 @@ function App() {
   const [path, setPath] = useState([]);
   const [shortest, setShortest] = useState(true);
   const [delay, setDelay] = useState(500);
+  const [loading, setLoading] = useState(false);
 
   useState(() => {
     axios
@@ -45,6 +46,7 @@ function App() {
     document.querySelectorAll("circle").forEach((circle) => {
       circle.style.fill = "white";
     });
+    setLoading(true);
     axios
       .get(
         shortest
@@ -62,6 +64,7 @@ function App() {
       )
       .then((res) => {
         setPath(res.data.path);
+        setLoading(false);
       });
   }
 
@@ -74,7 +77,11 @@ function App() {
           justifyContent: "center",
         }}
       >
-        <img src={logo} alt="stupid mrt logo" style={{width: "300px", alignSelf: "center"}}/>
+        <img
+          src={logo}
+          alt="stupid mrt logo"
+          style={{ width: "300px", alignSelf: "center" }}
+        />
         <form onSubmit={handleSubmit}>
           <Box sx={{ m: 1, display: "flex", flexDirection: "column", gap: 1 }}>
             <FormControl fullWidth>
@@ -148,7 +155,7 @@ function App() {
       </aside>
       <main>
         {console.log(path)}
-        <Map path={path} delay={delay} />
+        <Map path={path} delay={delay} loading={loading} />
       </main>
     </div>
   );

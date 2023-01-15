@@ -1,6 +1,6 @@
 import Circle from "./circle";
 
-function Map({ path, delay }) {
+function Map({ path, delay, loading }) {
   return (
     <svg
       width="1464"
@@ -139,6 +139,7 @@ function Map({ path, delay }) {
           <g id="circle line circles">
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc29"
               cx="563"
@@ -150,6 +151,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc22"
               cx="374"
@@ -161,6 +163,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc19"
               cx="430"
@@ -172,6 +175,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc17"
               cx="539"
@@ -183,6 +187,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc15"
               cx="677"
@@ -194,6 +199,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc13"
               cx="857"
@@ -205,6 +211,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc10"
               cx="999"
@@ -216,6 +223,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc09"
               cx="1019"
@@ -227,6 +235,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc04"
               cx="956"
@@ -238,6 +247,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ce02"
               cx="791"
@@ -249,6 +259,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ce01"
               cx="900"
@@ -260,6 +271,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc01"
               cx="696"
@@ -271,6 +283,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc28"
               cx="499.5"
@@ -282,6 +295,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc27"
               cx="458.5"
@@ -293,6 +307,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc26"
               cx="426.5"
@@ -304,6 +319,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc25"
               cx="405.5"
@@ -315,6 +331,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc23"
               cx="373.5"
@@ -326,6 +343,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc21"
               cx="378.5"
@@ -337,6 +355,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc20"
               cx="400.5"
@@ -348,6 +367,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc16"
               cx="594.5"
@@ -359,6 +379,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc14"
               cx="774.5"
@@ -370,6 +391,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc12"
               cx="918.5"
@@ -381,6 +403,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc11"
               cx="966.5"
@@ -392,6 +415,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc16_2"
               cx="1027.5"
@@ -403,6 +427,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc08"
               cx="1027.5"
@@ -414,6 +439,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc07"
               cx="1027.5"
@@ -425,6 +451,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc05"
               cx="998.5"
@@ -436,6 +463,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc02"
               cx="790.5"
@@ -447,6 +475,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc03"
               cx="870.5"
@@ -458,6 +487,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc06"
               cx="1016.5"
@@ -469,6 +499,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cc24"
               cx="386.5"
@@ -483,6 +514,7 @@ function Map({ path, delay }) {
           <g id="green line circles">
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew33"
               cx="13.5"
@@ -494,6 +526,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew31"
               cx="13.5"
@@ -505,6 +538,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew26"
               cx="67.5"
@@ -516,6 +550,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew17"
               cx="546.5"
@@ -527,6 +562,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew18"
               cx="508.5"
@@ -538,6 +574,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew16"
               cx="599"
@@ -549,6 +586,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew15"
               cx="638.5"
@@ -560,6 +598,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew11"
               cx="909.5"
@@ -571,6 +610,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew10"
               cx="947.5"
@@ -582,6 +622,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew09"
               cx="982.5"
@@ -593,6 +634,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew03"
               cx="1308.5"
@@ -604,6 +646,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew01"
               cx="1308.5"
@@ -615,6 +658,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cg2"
               cx="1439.5"
@@ -626,6 +670,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="cg1"
               cx="1381.5"
@@ -637,6 +682,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew02"
               cx="1321.5"
@@ -648,6 +694,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew05"
               cx="1197.5"
@@ -659,6 +706,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew06"
               cx="1124.5"
@@ -670,6 +718,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew07"
               cx="1072.5"
@@ -681,6 +730,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew19"
               cx="465.5"
@@ -692,6 +742,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew20"
               cx="420.5"
@@ -703,6 +754,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew22"
               cx="314.5"
@@ -714,6 +766,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew23"
               cx="267.5"
@@ -725,6 +778,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew25"
               cx="125.5"
@@ -736,6 +790,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew27"
               cx="17.5"
@@ -747,6 +802,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew28"
               cx="13.5"
@@ -758,6 +814,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew29"
               cx="13.5"
@@ -769,6 +826,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew30"
               cx="13.5"
@@ -780,6 +838,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew32"
               cx="13.5"
@@ -791,6 +850,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew24"
               cx="186"
@@ -802,6 +862,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew14"
               cx="782"
@@ -813,6 +874,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew13"
               cx="782"
@@ -824,6 +886,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew12"
               cx="871"
@@ -835,6 +898,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ew04"
               cx="1293"
@@ -849,6 +913,7 @@ function Map({ path, delay }) {
           <g id="red line circles">
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns2"
               cx="185.5"
@@ -860,6 +925,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns3"
               cx="185.5"
@@ -871,6 +937,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns10"
               cx="421.5"
@@ -882,6 +949,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns9"
               cx="349"
@@ -893,6 +961,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns21"
               cx="625"
@@ -904,6 +973,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns4"
               cx="188"
@@ -915,6 +985,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns22"
               cx="549"
@@ -926,6 +997,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns11"
               cx="491.5"
@@ -937,6 +1009,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns12"
               cx="561.5"
@@ -948,6 +1021,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns13"
               cx="631.5"
@@ -959,6 +1033,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns14"
               cx="669.5"
@@ -970,6 +1045,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns15"
               cx="676.5"
@@ -981,6 +1057,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns16"
               cx="679.5"
@@ -992,6 +1069,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns23"
               cx="601.5"
@@ -1003,6 +1081,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns28"
               cx="846.5"
@@ -1014,6 +1093,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns20"
               cx="649.5"
@@ -1025,6 +1105,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns19"
               cx="676.5"
@@ -1036,6 +1117,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns18"
               cx="676.5"
@@ -1047,6 +1129,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns8"
               cx="232.5"
@@ -1058,6 +1141,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns7"
               cx="185.5"
@@ -1069,6 +1153,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ns5"
               cx="185.5"
@@ -1083,6 +1168,7 @@ function Map({ path, delay }) {
           <g id="brown line circles">
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te1"
               cx="300.5"
@@ -1094,6 +1180,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te3"
               cx="383.5"
@@ -1105,6 +1192,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te4"
               cx="416.5"
@@ -1116,6 +1204,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te5"
               cx="443.5"
@@ -1127,6 +1216,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te6"
               cx="478.5"
@@ -1138,6 +1228,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te7"
               cx="512.5"
@@ -1149,6 +1240,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te8"
               cx="536.5"
@@ -1160,6 +1252,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te12"
               cx="541.5"
@@ -1171,6 +1264,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te15"
               cx="541.5"
@@ -1182,6 +1276,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te16"
               cx="536.5"
@@ -1193,6 +1288,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te11"
               cx="544"
@@ -1204,6 +1300,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te22"
               cx="1016.5"
@@ -1215,6 +1312,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te18"
               cx="652.5"
@@ -1226,6 +1324,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te19"
               cx="731.5"
@@ -1237,6 +1336,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="te13"
               cx="541.5"
@@ -1251,6 +1351,7 @@ function Map({ path, delay }) {
           <g id="blue line circles">
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt1"
               cx="301"
@@ -1262,6 +1363,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt12"
               cx="733"
@@ -1273,6 +1375,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt19"
               cx="637"
@@ -1284,6 +1387,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt2"
               cx="300.5"
@@ -1295,6 +1399,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt3"
               cx="300.5"
@@ -1306,6 +1411,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt7"
               cx="303.5"
@@ -1317,6 +1423,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt13"
               cx="781.5"
@@ -1328,6 +1435,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt22"
               cx="847.5"
@@ -1339,6 +1447,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt21"
               cx="806.5"
@@ -1350,6 +1459,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt20"
               cx="631.5"
@@ -1361,6 +1471,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt17"
               cx="832.5"
@@ -1372,6 +1483,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt18"
               cx="736.5"
@@ -1383,6 +1495,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt23"
               cx="896.5"
@@ -1394,6 +1507,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt24"
               cx="930.5"
@@ -1405,6 +1519,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt25"
               cx="968.5"
@@ -1416,6 +1531,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt27"
               cx="1048.5"
@@ -1427,6 +1543,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt28"
               cx="1089.5"
@@ -1438,6 +1555,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt29"
               cx="1124.5"
@@ -1449,6 +1567,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt30"
               cx="1183.5"
@@ -1460,6 +1579,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt31"
               cx="1251.5"
@@ -1471,6 +1591,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt33"
               cx="1383.5"
@@ -1482,6 +1603,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt34"
               cx="1383.5"
@@ -1493,6 +1615,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt8"
               cx="353.5"
@@ -1504,6 +1627,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt6"
               cx="300.5"
@@ -1515,6 +1639,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="dt5"
               cx="300.5"
@@ -1529,6 +1654,7 @@ function Map({ path, delay }) {
           <g id="circle line circles_2">
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne05"
               cx="669.5"
@@ -1540,6 +1666,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne10"
               cx="760.5"
@@ -1551,6 +1678,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne11"
               cx="802.5"
@@ -1562,6 +1690,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne13"
               cx="891.5"
@@ -1573,6 +1702,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne14"
               cx="927.5"
@@ -1584,6 +1714,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne15"
               cx="962.5"
@@ -1595,6 +1726,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne09"
               cx="730.5"
@@ -1606,6 +1738,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne08"
               cx="730.5"
@@ -1617,6 +1750,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne16"
               cx="995"
@@ -1628,6 +1762,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="ne17"
               cx="1075"
@@ -1642,6 +1777,7 @@ function Map({ path, delay }) {
           <g id="bp lrt line circles">
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp2"
               cx="213.5"
@@ -1653,6 +1789,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp3"
               cx="213.5"
@@ -1664,6 +1801,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp4"
               cx="213.5"
@@ -1675,6 +1813,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp13"
               cx="280.5"
@@ -1686,6 +1825,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp12"
               cx="277.5"
@@ -1697,6 +1837,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp11"
               cx="277.5"
@@ -1708,6 +1849,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp10"
               cx="303.5"
@@ -1719,6 +1861,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp09"
               cx="323.5"
@@ -1730,6 +1873,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp08"
               cx="323.5"
@@ -1741,6 +1885,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp07"
               cx="316.5"
@@ -1752,6 +1897,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="bp5"
               cx="251.5"
@@ -1766,6 +1912,7 @@ function Map({ path, delay }) {
           <g id="other lrt line circles">
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="sw1"
               cx="971.5"
@@ -1777,6 +1924,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="sw2"
               cx="955.5"
@@ -1788,6 +1936,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="sw3"
               cx="937.5"
@@ -1799,6 +1948,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="sw5"
               cx="889.5"
@@ -1810,6 +1960,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="sw7"
               cx="921.5"
@@ -1821,6 +1972,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="se1"
               cx="1062.5"
@@ -1832,6 +1984,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pe1"
               cx="1097.5"
@@ -1843,6 +1996,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pe2"
               cx="1115.5"
@@ -1854,6 +2008,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pe3"
               cx="1135.5"
@@ -1865,6 +2020,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pe4"
               cx="1167.5"
@@ -1876,6 +2032,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pe5"
               cx="1167.5"
@@ -1887,6 +2044,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pe6"
               cx="1152.5"
@@ -1898,6 +2056,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pe7"
               cx="1129.5"
@@ -1909,6 +2068,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pw1"
               cx="1051.5"
@@ -1920,6 +2080,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pw3"
               cx="1020.5"
@@ -1931,6 +2092,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pw4"
               cx="985.5"
@@ -1942,6 +2104,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pw5"
               cx="974.5"
@@ -1953,6 +2116,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pw6"
               cx="994.5"
@@ -1964,6 +2128,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="pw7"
               cx="1015.5"
@@ -1975,6 +2140,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="se2"
               cx="1085.5"
@@ -1986,6 +2152,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="se3"
               cx="1085.5"
@@ -1997,6 +2164,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="se4"
               cx="1046.5"
@@ -2008,6 +2176,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="se5"
               cx="1023.5"
@@ -2019,6 +2188,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="sw8"
               cx="943.5"
@@ -2030,6 +2200,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="sw6"
               cx="898.5"
@@ -2041,6 +2212,7 @@ function Map({ path, delay }) {
             />
             <Circle
               path={path}
+              loading={loading}
               delay={delay}
               id="sw4"
               cx="909.5"

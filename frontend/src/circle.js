@@ -11,6 +11,7 @@ function Circle({
   strokeLinecap,
   path,
   delay,
+  loading,
 }) {
   id = id[2] === "0" ? id.substring(0, 2) + id.substring(3) : id;
   id = id.toUpperCase();
@@ -50,6 +51,7 @@ function Circle({
       stroke={stroke}
       strokeWidth={strokeWidth}
       strokeLinecap={strokeLinecap}
+      className={loading ? "loading" : ""}
     ></circle>
   );
 }
