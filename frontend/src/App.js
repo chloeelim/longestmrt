@@ -25,7 +25,7 @@ function App() {
 
   useState(() => {
     axios
-      .get("http://127.0.0.1:5001/mrts", {
+      .get(`${process.env.REACT_APP_BACKEND_URL}/mrts`, {
         headers: {
           "Access-Control-Allow-Origin": "*",
         },
@@ -48,8 +48,8 @@ function App() {
     axios
       .get(
         shortest
-          ? "http://127.0.0.1:5001/shortest"
-          : "http://127.0.0.1:5001/longest",
+          ? `${process.env.REACT_APP_BACKEND_URL}/shortest`
+          : `${process.env.REACT_APP_BACKEND_URL}/longest`,
         {
           headers: {
             "Access-Control-Allow-Origin": "*",
