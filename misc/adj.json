@@ -217,11 +217,11 @@
   },
   "CG1 DT35": {
     "name": "Expo",
-    "edges": []
+    "edges": ["CG2", "EW4 CG", "DT34"]
   },
   "CG2": {
     "name": "Changi Airport",
-    "edges": []
+    "edges": ["CG1 DT35"]
   },
   "NE1 CC29": {
     "name": "HarbourFront",
