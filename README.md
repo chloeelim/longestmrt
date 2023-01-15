@@ -1,6 +1,6 @@
 # Stupid MRT: Hack&Roll 2023
 
-:warning: Our ![github page](https://github.com/chloeelim/longestmrt/deployments/activity_log?environment=github-pages) site is not yet working because we couldn't host our backend server somewhere (~~heruko student tier~~) without facing request timeouts due to the long query time
+:warning: Our ![github page](https://github.com/chloeelim/longestmrt/deployments/activity_log?environment=github-pages) site is not yet working because we couldn't host our backend server somewhere (~~heroku student tier~~) without facing request timeouts due to the long query time
 of our algorithm.
 
 But we're working on that! In the mean time, feel free to play around with our app on your local environment!
@@ -15,7 +15,8 @@ With _Stupid MRT_, you can not just only find the _shortest_ path between two MR
 
 Say hello to _Stupid MRT_'s take on a NP-hard problem, served along a side of a ~~stupidly~~ long runtime (somewhere between 30 seconds to 5 minutes). We're bring the longest path problem (by **number of** stations) to Singapore's MRT system!
 
-https://user-images.githubusercontent.com/79991214/212520202-1654e280-35bb-4844-b3c6-fc6f61b5ca63.mov
+[https://user-images.githubusercontent.com/79991214/212520202-1654e280-35bb-4844-b3c6-fc6f61b5ca63.mov](https://user-images.githubusercontent.com/79991214/212521921-1166f4f5-3f84-4439-92f1-190edb947348.mov
+)
 
 ---
 ## Take a look beneath the hood

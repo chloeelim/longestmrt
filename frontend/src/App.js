@@ -66,7 +66,7 @@ function App() {
         }
       )
       .then((res) => {
-        setPath(res.data.path);
+        setPath(res.data.path || []);
         setLoading(false);
       });
   }
