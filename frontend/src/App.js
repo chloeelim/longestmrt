@@ -7,13 +7,16 @@ import {
   Select,
   MenuItem,
   Button,
-  Switch,
   Typography,
   Slider,
+  ToggleButtonGroup,
+  ToggleButton,
 } from "@mui/material";
 import { useState } from "react";
 import axios from "axios";
 import Map from "./map";
+import ShortcutIcon from "@mui/icons-material/Shortcut";
+import RoundAboutRightIcon from "@mui/icons-material/RoundaboutRight";
 
 function App() {
   const [start, setStart] = useState("");
@@ -68,6 +71,12 @@ function App() {
       });
   }
 
+  function handleSetShortest(e, newValue) {
+    if (newValue !== null) {
+      setShortest(newValue);
+    }
+  }
+
   return (
     <div id="app">
       <aside
@@ -111,12 +120,18 @@ function App() {
               </Select>
             </FormControl>
             <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
-              <Switch
-                defaultChecked
-                value={shortest}
-                onChange={() => setShortest(!shortest)}
-              ></Switch>
-              <Typography>Shortest</Typography>
+              <ToggleButtonGroup
+              value={shortest}
+              exclusive
+              onChange={handleSetShortest}>
+                <ToggleButton value={true} aria-label="shortest path">
+                  <ShortcutIcon /> Shortest Path
+                </ToggleButton>
+
+                <ToggleButton value={false} aria-label="shortest path">
+                  <RoundAboutRightIcon /> Longest Path
+                </ToggleButton>
+              </ToggleButtonGroup>
             </Box>
             <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
               <Slider

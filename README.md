@@ -1,5 +1,12 @@
 # Stupid MRT: Hack&Roll 2023
 
+:warning: Our ![github page](https://github.com/chloeelim/longestmrt/deployments/activity_log?environment=github-pages) site is not yet working because we couldn't host our backend server somewhere (~~heruko student tier~~) without facing request timeouts due to the long query time
+of our algorithm.
+
+But we're working on that! In the mean time, feel free to play around with our app on your local environment!
+
+---
+
 ![stupidsmrtlogo](https://user-images.githubusercontent.com/79991214/212520205-3dd36c6c-886c-4fea-aeba-65771fc18a8c.svg)
 
 Ever wanted to burn a whole day squeezed in the MRT? Well, we heard you, loud and clear! That's why we built _Stupid MRT_ just for you! (disclaimer: the logo of this app is not an attack on SMRT, but ourselves)
