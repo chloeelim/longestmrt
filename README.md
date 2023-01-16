@@ -23,4 +23,4 @@ Say hello to _Stupid MRT_'s take on a NP-hard problem, served along a side of a 
 
 To calculate the longest path, we...
 1. precomputed the shortest path between all stations with the Floyd-Warshall algorithm
-2. used a priority queue to prioritise nodes that are **further** away from the destination node for optimisation
+2. used a priority queue to prioritise nodes that are ~~**further** away from~~ closer to the destination node ~~for optimisation~~ and recalculate everything (this accident might have actually made it accurate because the other one is incredibly fast but the route seems to be cut to 40-70 stations) 
