@@ -1,6 +1,6 @@
 # Stupid MRT: Hack&Roll 2023
 
-:warning: Our ![github page](https://github.com/chloeelim/longestmrt/deployments/activity_log?environment=github-pages) site is not yet working because we couldn't host our backend server somewhere (~~heroku student tier~~) without facing request timeouts due to the long query time
+:warning: Our [github page](https://github.com/chloeelim/longestmrt/deployments/activity_log?environment=github-pages) site is not yet working because we couldn't host our backend server somewhere (~~heroku student tier~~) without facing request timeouts due to the long query time
 of our algorithm.
 
 But we're working on that! In the mean time, feel free to play around with our app on your local environment!
