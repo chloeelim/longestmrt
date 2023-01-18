@@ -1,7 +1,7 @@
 import sys
 import time
 import json
-from heapq import heappop, heappush
+from collections import deque
 
 with open("adj.json") as f:
     data = json.load(f)
@@ -34,12 +34,14 @@ shortest = floyd_warshall()
 def longest_path(start, end):
     """return longest path from start -> end"""
     dist = {}
-    pq = [(0, 0, start, [])]  # shortest, currdist, node
+    q = deque()
+    q.append((0, start, []))  # shortest, currdist, node
     ans_num = float('-inf')
     ans_path = None
-    while pq:
-        s, currdist, node, path = heappop(pq)
-        if node in dist and dist[node] > currdist or node in path:
+    while q:
+        currdist, node, path = q.popleft()
+
+        if node in path:
             continue
         dist[node] = currdist
         if node == end:
@@ -49,8 +51,7 @@ def longest_path(start, end):
 
         else:
             for edge in data[node]['edges']:
-                heappush(
-                    pq, (shortest[code_to_index[node]][code_to_index[edge]], currdist + 1, edge, path + [node]))
+                q.append((currdist + 1, edge, path + [node]))
 
     return ans_path
 

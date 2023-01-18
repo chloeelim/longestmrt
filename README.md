@@ -17,10 +17,3 @@ Say hello to _Stupid MRT_'s take on a NP-hard problem, served along a side of a 
 
 [https://user-images.githubusercontent.com/79991214/212520202-1654e280-35bb-4844-b3c6-fc6f61b5ca63.mov](https://user-images.githubusercontent.com/79991214/212521921-1166f4f5-3f84-4439-92f1-190edb947348.mov
 )
-
----
-## Take a look beneath the hood
-
-To calculate the longest path, we...
-1. precomputed the shortest path between all stations with the Floyd-Warshall algorithm
-2. used a priority queue to prioritise nodes that are ~~**further** away from~~ closer to the destination node ~~for optimisation~~ and recalculate everything (this accident might have actually made it accurate because the other one is incredibly fast but the route seems to be cut to 40-70 stations) 
