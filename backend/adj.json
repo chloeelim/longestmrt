@@ -113,7 +113,7 @@
   },
   "EW4 CG": {
     "name": "Tanah Merah",
-    "edges": ["EW3", "EW5"]
+    "edges": ["EW3", "EW5", "CG1 DT35"]
   },
   "EW5": {
     "name": "Bedok",
@@ -217,11 +217,11 @@
   },
   "CG1 DT35": {
     "name": "Expo",
-    "edges": []
+    "edges": ["DT34", "CG2", "EW4 CG"]
   },
   "CG2": {
     "name": "Changi Airport",
-    "edges": []
+    "edges": ["CG1 DT35"]
   },
   "NE1 CC29": {
     "name": "HarbourFront",
@@ -261,11 +261,11 @@
   },
   "NE16 STC": {
     "name": "Sengkang",
-    "edges": ["NE15", "NE17 PTC"]
+    "edges": ["NE15", "NE17 PTC", "SE1", "SE5", "SW1", "SW8"]
   },
   "NE17 PTC": {
     "name": "Punggol",
-    "edges": ["NE16 STC"]
+    "edges": ["NE16 STC", "PW1", "PW7", "PE1", "PE7"]
   },
   "CC2": {
     "name": "Bras Basah",
@@ -581,7 +581,7 @@
   },
   "SW1": {
     "name": "Cheng Lim",
-    "edges": ["SW2"]
+    "edges": ["SW2", "NE16 STC"]
   },
   "SW2": {
     "name": "Farmway",
@@ -609,11 +609,11 @@
   },
   "SW8": {
     "name": "Renjong",
-    "edges": ["SW7"]
+    "edges": ["SW7", "NE16 STC"]
   },
   "SE1": {
     "name": "Compassville",
-    "edges": ["SE2"]
+    "edges": ["SE2", "NE16 STC"]
   },
   "SE2": {
     "name": "Rumbia",
@@ -629,11 +629,11 @@
   },
   "SE5": {
     "name": "Ranggung",
-    "edges": ["SE4"]
+    "edges": ["SE4", "NE16 STC"]
   },
   "PW1": {
     "name": "Sam Kee",
-    "edges": ["PW2"]
+    "edges": ["PW2", "NE17 PTC"]
   },
   "PW2": {
     "name": "Teck Lee",
@@ -657,11 +657,11 @@
   },
   "PW7": {
     "name": "Soo Teck",
-    "edges": ["PW6"]
+    "edges": ["PW6", "NE17 PTC"]
   },
   "PE1": {
     "name": "Cove",
-    "edges": ["PE2"]
+    "edges": ["PE2", "NE17 PTC"]
   },
   "PE2": {
     "name": "Meridian",
@@ -685,6 +685,6 @@
   },
   "PE7": {
     "name": "Damai",
-    "edges": ["PE6"]
+    "edges": ["PE6", "NE17 PTC"]
   }
 }
