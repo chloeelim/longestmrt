@@ -14,9 +14,10 @@ import {
 } from "@mui/material";
 import { useState } from "react";
 import axios from "axios";
-import Map from "./map";
+import Map from "./components/map";
 import ShortcutIcon from "@mui/icons-material/Shortcut";
 import RoundAboutRightIcon from "@mui/icons-material/RoundaboutRight";
+import api from "./api/api";
 
 function App() {
   const [start, setStart] = useState("");
@@ -28,13 +29,7 @@ function App() {
   const [loading, setLoading] = useState(false);
 
   useState(() => {
-    axios
-      .get(`${process.env.REACT_APP_BACKEND_URL}/mrts`, {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-        },
-      })
-      .then((res) => setData(res.data));
+    api.getAllMrts().then((mrts) => setData(mrts));
   }, []);
 
   function replay() {
@@ -50,25 +45,13 @@ function App() {
       circle.style.fill = "white";
     });
     setLoading(true);
-    axios
-      .get(
-        shortest
-          ? `${process.env.REACT_APP_BACKEND_URL}/shortest`
-          : `${process.env.REACT_APP_BACKEND_URL}/longest`,
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-          },
-          params: {
-            s: start,
-            e: end,
-          },
-        }
-      )
-      .then((res) => {
-        setPath(res.data.path || []);
-        setLoading(false);
-      });
+    const pathPromise = shortest
+      ? api.getShortestPath(start, end)
+      : api.getLongestPath(start, end);
+    pathPromise.then((path) => {
+      setPath(path || []);
+      setLoading(false);
+    });
   }
 
   function handleSetShortest(e, newValue) {
@@ -121,9 +104,10 @@ function App() {
             </FormControl>
             <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
               <ToggleButtonGroup
-              value={shortest}
-              exclusive
-              onChange={handleSetShortest}>
+                value={shortest}
+                exclusive
+                onChange={handleSetShortest}
+              >
                 <ToggleButton value={true} aria-label="shortest path">
                   <ShortcutIcon /> Shortest Path
                 </ToggleButton>
