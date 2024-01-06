@@ -1,6 +1,5 @@
-import sys
-import time
 import json
+import sqlite3
 from collections import deque
 
 with open("adj.json") as f:
@@ -52,8 +51,21 @@ def longest_path(start, end):
         else:
             for edge in data[node]['edges']:
                 q.append((currdist + 1, edge, path + [node]))
-
+    if not len(ans_path):
+        print(start, end, "returned none")
     return ans_path
+
+
+def retrieve_longest_path(start, end):
+    with sqlite3.connect("mrt.db") as con:
+        cur = con.cursor()
+        path = cur.execute(
+            "SELECT part FROM path WHERE start = ? AND end = ? ORDER BY index_", (start, end)).fetchall()
+        if not path:
+            print("wth", path)
+            return longest_path(start, end)
+        path = [part[0] for part in path]
+        return path
 
 
 codes = list(data.keys())

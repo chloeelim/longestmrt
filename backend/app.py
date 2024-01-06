@@ -3,7 +3,7 @@ from flask_cors import CORS
 from collections import deque
 import json
 
-from graph import longest_path
+from graph import retrieve_longest_path
 
 app = Flask(__name__)
 CORS(app)
@@ -24,14 +24,17 @@ def mrts():
             mrt[code.lower()] = name
     return mrt
 
+
 @app.route("/shortest")
 def shortest():
     if "s" not in request.args or "e" not in request.args:
         abort(400)
-    
+
     try:
-        start = [code for code in codes if request.args['s'].upper() in code.split()]
-        end = [code for code in codes if request.args['e'].upper() in code.split()]
+        start = [code for code in codes if request.args['s'].upper()
+                 in code.split()]
+        end = [code for code in codes if request.args['e'].upper()
+               in code.split()]
         if not start:
             return {"error": f"start {request.args['s']} is invalid"}, 400
         if not end:
@@ -52,7 +55,7 @@ def shortest():
             continue
         else:
             parent[curr] = par
-        
+
         if curr == end:
             break
 
@@ -63,7 +66,7 @@ def shortest():
     while curr:
         res.append(curr)
         curr = parent[curr]
-    return { "path": res[::-1] }
+    return {"path": res[::-1]}
 
 
 @app.route("/longest")
@@ -71,8 +74,10 @@ def longest():
     if "s" not in request.args or "e" not in request.args:
         abort(400)
     try:
-        start = [code for code in codes if request.args['s'].upper() in code.split()]
-        end = [code for code in codes if request.args['e'].upper() in code.split()]
+        start = [code for code in codes if request.args['s'].upper()
+                 in code.split()]
+        end = [code for code in codes if request.args['e'].upper()
+               in code.split()]
         if not start:
             return {"error": f"start {request.args['s']} is invalid"}, 400
         if not end:
@@ -82,5 +87,4 @@ def longest():
     except:
         abort(400)
 
-    return { "path": longest_path(start, end) }
-            
+    return {"path": retrieve_longest_path(start, end)}
