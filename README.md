@@ -1,9 +1,17 @@
 # Stupid MRT: Hack&Roll 2023
 
-:warning: Our [github page](https://github.com/chloeelim/longestmrt/deployments/activity_log?environment=github-pages) site is not yet working because we couldn't host our backend server somewhere (~~heroku student tier~~) without facing request timeouts due to the long query time
-of our algorithm.
+Our [github pages](https://chloeelim.github.io/longestmrt/) site is now working with **significantly faster response times**! 
 
-~~But we're working on that!~~ In the mean time, feel free to play around with our app on your local environment!
+Tip: the longest path we found has **117 stations** with these start/end points (and vice versa.)
+
+| Start  | End |
+| ------------- | ------------- |
+| Tuas Link [EW33] | Cheng Lim [SW1]  |
+| Tuas Link [EW33] | Renjong [SW8]  |
+| Tuas Link [EW33] | Sam Kee [PW1] |
+| Tuas Link [EW33] | Soo Teck [PW7]  |
+| Tuas Link [EW33] | Cove [PE1]  |
+| Tuas Link [EW33] | Damai [PE7]  |
 
 ---
 
