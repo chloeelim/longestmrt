@@ -8,9 +8,6 @@ with open("adj.json") as f:
     index_to_code = {index: code for index, code in enumerate(data.keys())}
 
 
-# test: DT2, TE4
-
-
 def floyd_warshall():
     # precompute first
     count = len(data)
@@ -66,6 +63,31 @@ def retrieve_longest_path(start, end):
             return longest_path(start, end)
         path = [part[0] for part in path]
         return path
+
+
+def shortest_path(start, end):
+    """calculate shortest path between two MRT stations using BFS"""
+    queue = deque()
+    queue.append((start, None))
+    parent = {}
+    while queue:
+        curr, par = queue.popleft()
+        if curr in parent:
+            continue
+        else:
+            parent[curr] = par
+
+        if curr == end:
+            break
+
+        for edge in data[curr]["edges"]:
+            queue.append((edge, curr))
+    res = []
+    curr = end
+    while curr:
+        res.append(curr)
+        curr = parent[curr]
+    return res[::-1]
 
 
 codes = list(data.keys())
