@@ -1,6 +1,6 @@
 import json
-import sqlite3
 from collections import deque
+from model import Path
 
 with open("adj.json") as f:
     data = json.load(f)
@@ -54,15 +54,8 @@ def longest_path(start, end):
 
 
 def retrieve_longest_path(start, end):
-    with sqlite3.connect("mrt.db") as con:
-        cur = con.cursor()
-        path = cur.execute(
-            "SELECT part FROM path WHERE start = ? AND end = ? ORDER BY index_", (start, end)).fetchall()
-        if not path:
-            print("wth", path)
-            return longest_path(start, end)
-        path = [part[0] for part in path]
-        return path
+    result = Path.fetch_longest_path(start, end)
+    return result if result else longest_path(start, end)
 
 
 def shortest_path(start, end):

@@ -1,4 +1,4 @@
-from flask import Flask, request, abort
+from flask import Flask, request
 from flask_cors import CORS
 
 from graph import retrieve_longest_path, shortest_path
