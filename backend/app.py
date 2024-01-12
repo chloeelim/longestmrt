@@ -1,9 +1,7 @@
-from flask import Flask, request, abort
+from flask import Flask, request
 from flask_cors import CORS
-from collections import deque
-import json
 
-from graph import retrieve_longest_path
+from graph import retrieve_longest_path, shortest_path
 
 app = Flask(__name__)
 CORS(app)
@@ -12,8 +10,24 @@ with open("../misc/data.csv") as f:
     data = [line.split(',') for line in f]
     codes = [i[0] for i in data]
 
-with open("../misc/adj.json") as f:
-    adj = json.load(f)
+
+def validate_stations(arg_start, arg_end):
+    if not arg_start:
+        return {"error": f"start is empty"}
+    elif not arg_end:
+        return {"error": f"end is empty"}
+
+    start = [code for code in codes if arg_start.upper()
+             in code.split()]
+    end = [code for code in codes if arg_end.upper()
+           in code.split()]
+    if not start:
+        return {"error": f"start {request.args['s']} is invalid"}
+    if not end:
+        return {"error": f"end {request.args['e']} is invalid"}
+    start = start[0]
+    end = end[0]
+    return start, end
 
 
 @app.route("/mrts")
@@ -27,64 +41,21 @@ def mrts():
 
 @app.route("/shortest")
 def shortest():
-    if "s" not in request.args or "e" not in request.args:
-        abort(400)
-
     try:
-        start = [code for code in codes if request.args['s'].upper()
-                 in code.split()]
-        end = [code for code in codes if request.args['e'].upper()
-               in code.split()]
-        if not start:
-            return {"error": f"start {request.args['s']} is invalid"}, 400
-        if not end:
-            return {"error": f"end {request.args['e']} is invalid"}, 400
-        start = start[0]
-        end = end[0]
-
+        result = validate_stations(request.args["s"], request.args["e"])
+        start, end = result
     except:
-        pass
+        return result, 400
 
-    # bfs
-    queue = deque()
-    queue.append((start, None))
-    parent = {}
-    while queue:
-        curr, par = queue.popleft()
-        if curr in parent:
-            continue
-        else:
-            parent[curr] = par
-
-        if curr == end:
-            break
-
-        for edge in adj[curr]["edges"]:
-            queue.append((edge, curr))
-    res = []
-    curr = end
-    while curr:
-        res.append(curr)
-        curr = parent[curr]
-    return {"path": res[::-1]}
+    return {"path": shortest_path(start, end)}
 
 
 @app.route("/longest")
 def longest():
-    if "s" not in request.args or "e" not in request.args:
-        abort(400)
     try:
-        start = [code for code in codes if request.args['s'].upper()
-                 in code.split()]
-        end = [code for code in codes if request.args['e'].upper()
-               in code.split()]
-        if not start:
-            return {"error": f"start {request.args['s']} is invalid"}, 400
-        if not end:
-            return {"error": f"end {request.args['e']} is invalid"}, 400
-        start = start[0]
-        end = end[0]
+        result = validate_stations(request.args["s"], request.args["e"])
+        start, end = result
     except:
-        abort(400)
+        return result, 400
 
     return {"path": retrieve_longest_path(start, end)}

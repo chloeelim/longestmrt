@@ -1,14 +1,11 @@
 import json
-import sqlite3
 from collections import deque
+from model import Path
 
 with open("adj.json") as f:
     data = json.load(f)
     code_to_index = {code: index for index, code in enumerate(data.keys())}
     index_to_code = {index: code for index, code in enumerate(data.keys())}
-
-
-# test: DT2, TE4
 
 
 def floyd_warshall():
@@ -57,15 +54,33 @@ def longest_path(start, end):
 
 
 def retrieve_longest_path(start, end):
-    with sqlite3.connect("mrt.db") as con:
-        cur = con.cursor()
-        path = cur.execute(
-            "SELECT part FROM path WHERE start = ? AND end = ? ORDER BY index_", (start, end)).fetchall()
-        if not path:
-            print("wth", path)
-            return longest_path(start, end)
-        path = [part[0] for part in path]
-        return path
+    result = Path.fetch_longest_path(start, end)
+    return result if result else longest_path(start, end)
+
+
+def shortest_path(start, end):
+    """calculate shortest path between two MRT stations using BFS"""
+    queue = deque()
+    queue.append((start, None))
+    parent = {}
+    while queue:
+        curr, par = queue.popleft()
+        if curr in parent:
+            continue
+        else:
+            parent[curr] = par
+
+        if curr == end:
+            break
+
+        for edge in data[curr]["edges"]:
+            queue.append((edge, curr))
+    res = []
+    curr = end
+    while curr:
+        res.append(curr)
+        curr = parent[curr]
+    return res[::-1]
 
 
 codes = list(data.keys())
