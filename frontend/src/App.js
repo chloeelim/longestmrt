@@ -38,7 +38,6 @@ function App() {
   }, []);
 
   const sortedData = Object.entries(data).sort(([a], [b]) => {
-    console.log(a, b);
     const [, lineA, numberA] = a.match(/([a-zA-Z]+)(\d+)?/);
     const [, lineB, numberB] = b.match(/([a-zA-Z]+)(\d+)?/);
     if (lineA === lineB) {
