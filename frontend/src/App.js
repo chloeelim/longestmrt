@@ -37,6 +37,16 @@ function App() {
       .then((res) => setData(res.data));
   }, []);
 
+  const sortedData = Object.entries(data).sort(([a], [b]) => {
+    console.log(a, b);
+    const [, lineA, numberA] = a.match(/([a-zA-Z]+)(\d+)?/);
+    const [, lineB, numberB] = b.match(/([a-zA-Z]+)(\d+)?/);
+    if (lineA === lineB) {
+      return numberA - numberB;
+    }
+    return lineA.localeCompare(lineB);
+  });
+
   function replay() {
     document.querySelectorAll("circle").forEach((circle) => {
       circle.style.fill = "white";
@@ -101,18 +111,9 @@ function App() {
                 onChange={(e) => setStart(e.target.value)}
                 sx={{ backgroundColor: "#ffffe5" }}
               >
-                {Object.entries(data)
-                  .sort(([_, a], [__, b]) => {
-                    const [lineA, numberA] = /([a-zA-Z]+)(\d+)/.match(a);
-                    const [lineB, numberB] = /([a-zA-Z]+)(\d+)/.match(b);
-                    if (lineA === lineB) {
-                      return numberA - numberB;
-                    }
-                    return lineA.localeCompare(lineB);
-                  })
-                  .map(([k, v]) => (
-                    <MenuItem value={k}>{v + ` (${k})`}</MenuItem>
-                  ))}
+                {sortedData.map(([k, v]) => (
+                  <MenuItem value={k}>{v + ` (${k})`}</MenuItem>
+                ))}
               </Select>
             </FormControl>
             <FormControl fullWidth>
@@ -123,7 +124,7 @@ function App() {
                 onChange={(e) => setEnd(e.target.value)}
                 sx={{ backgroundColor: "#ffffe5" }}
               >
-                {Object.entries(data).map(([k, v]) => (
+                {sortedData.map(([k, v]) => (
                   <MenuItem value={k}>{v + ` (${k})`}</MenuItem>
                 ))}
               </Select>
@@ -178,8 +179,13 @@ function App() {
           </Box>
         </form>
       </aside>
-      <main>
-        {console.log(path)}
+      <main
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Map path={path} delay={delay} loading={loading} />
       </main>
     </div>
