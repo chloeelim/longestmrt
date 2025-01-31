@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/longestmrt/static/css/main.1d09c0e6.css",
-    "main.js": "/longestmrt/static/js/main.1d31f30f.js",
+    "main.js": "/longestmrt/static/js/main.39b79573.js",
     "static/js/787.cda612ba.chunk.js": "/longestmrt/static/js/787.cda612ba.chunk.js",
     "static/media/stupidsmrtlogo.svg": "/longestmrt/static/media/stupidsmrtlogo.807a7efd2fd51a001ce640a64dae82ed.svg",
     "index.html": "/longestmrt/index.html",
     "main.1d09c0e6.css.map": "/longestmrt/static/css/main.1d09c0e6.css.map",
-    "main.1d31f30f.js.map": "/longestmrt/static/js/main.1d31f30f.js.map",
+    "main.39b79573.js.map": "/longestmrt/static/js/main.39b79573.js.map",
     "787.cda612ba.chunk.js.map": "/longestmrt/static/js/787.cda612ba.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d09c0e6.css",
-    "static/js/main.1d31f30f.js"
+    "static/js/main.39b79573.js"
   ]
 }
