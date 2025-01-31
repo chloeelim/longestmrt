@@ -101,9 +101,18 @@ function App() {
                 onChange={(e) => setStart(e.target.value)}
                 sx={{ backgroundColor: "#ffffe5" }}
               >
-                {Object.entries(data).map(([k, v]) => (
-                  <MenuItem value={k}>{v + ` (${k})`}</MenuItem>
-                ))}
+                {Object.entries(data)
+                  .sort(([_, a], [__, b]) => {
+                    const [lineA, numberA] = /([a-zA-Z]+)(\d+)/.match(a);
+                    const [lineB, numberB] = /([a-zA-Z]+)(\d+)/.match(b);
+                    if (lineA === lineB) {
+                      return numberA - numberB;
+                    }
+                    return lineA.localeCompare(lineB);
+                  })
+                  .map(([k, v]) => (
+                    <MenuItem value={k}>{v + ` (${k})`}</MenuItem>
+                  ))}
               </Select>
             </FormControl>
             <FormControl fullWidth>
@@ -121,9 +130,10 @@ function App() {
             </FormControl>
             <Box sx={{ display: "flex", gap: 1, alignItems: "center" }}>
               <ToggleButtonGroup
-              value={shortest}
-              exclusive
-              onChange={handleSetShortest}>
+                value={shortest}
+                exclusive
+                onChange={handleSetShortest}
+              >
                 <ToggleButton value={true} aria-label="shortest path">
                   <ShortcutIcon /> Shortest Path
                 </ToggleButton>
